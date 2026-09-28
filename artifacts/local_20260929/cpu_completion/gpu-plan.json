@@ -1,0 +1,408 @@
+{
+  "jobs": [
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_tau_native.py",
+        "--upstream",
+        "third_party/tau0",
+        "--checkpoint",
+        "weights/tau0-libero",
+        "--input",
+        "runs/libero-captures-v4/task-0/observation.npz",
+        "--instruction",
+        "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "--input-kind",
+        "simulator",
+        "--device",
+        "cuda",
+        "--seed",
+        "7",
+        "--output",
+        "runs/cuda-native/task-0"
+      ],
+      "name": "tau_task_0",
+      "timeout_seconds": 600
+    },
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_tau_native.py",
+        "--upstream",
+        "third_party/tau0",
+        "--checkpoint",
+        "weights/tau0-libero",
+        "--input",
+        "runs/libero-captures-v4/task-1/observation.npz",
+        "--instruction",
+        "pick up the black bowl next to the ramekin and place it on the plate",
+        "--input-kind",
+        "simulator",
+        "--device",
+        "cuda",
+        "--seed",
+        "7",
+        "--output",
+        "runs/cuda-native/task-1"
+      ],
+      "name": "tau_task_1",
+      "timeout_seconds": 600
+    },
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_tau_native.py",
+        "--upstream",
+        "third_party/tau0",
+        "--checkpoint",
+        "weights/tau0-libero",
+        "--input",
+        "runs/libero-captures-v4/task-2/observation.npz",
+        "--instruction",
+        "pick up the black bowl from table center and place it on the plate",
+        "--input-kind",
+        "simulator",
+        "--device",
+        "cuda",
+        "--seed",
+        "7",
+        "--output",
+        "runs/cuda-native/task-2"
+      ],
+      "name": "tau_task_2",
+      "timeout_seconds": 600
+    },
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_w0_numerics.py",
+        "--upstream",
+        "third_party/internw0_delta",
+        "--checkpoint",
+        "weights/w0-base/pretrain.pt",
+        "--contract",
+        "configs/w0_base_audited.json",
+        "--device",
+        "cuda",
+        "--output",
+        "runs/cuda-native/w0-numerical"
+      ],
+      "name": "w0_numerical",
+      "timeout_seconds": 900
+    }
+  ],
+  "note": "Motor probe has synthetic inputs; Tau jobs use real recorded observations. No closed-loop success implied.",
+  "readiness_blockers": [
+    "NVIDIA runtime import/driver/VRAM preflight not performed",
+    "Native pretrained probes have not executed"
+  ],
+  "ready_for_cuda": false,
+  "required_files": [
+    {
+      "bytes": 879,
+      "path": "configs/w0_base_audited.json",
+      "sha256": "68c7b172e954ea5f7f12bd8b6de053b9027e300a82f802b73bc7708184da03cf"
+    },
+    {
+      "bytes": 930,
+      "path": "runs/libero-captures-v4/image-checks.json",
+      "sha256": "92870c444e53dd95339f1d179a0860de6aaac5748ad4dcc378fbe40abc3ac836"
+    },
+    {
+      "bytes": 48925,
+      "path": "runs/libero-captures-v4/task-0/image.png",
+      "sha256": "a351b4bed6cad862254ac143541071a94a53798203d9d0e0444551fbc7a3eade"
+    },
+    {
+      "bytes": 301880,
+      "path": "runs/libero-captures-v4/task-0/observation.npz",
+      "sha256": "2fb36bd9efe75780408fb62d1487346a7517787f361ee49693eb255f8cb27203"
+    },
+    {
+      "bytes": 900,
+      "path": "runs/libero-captures-v4/task-0/provenance.json",
+      "sha256": "a753d5115a05a9452407c8225df636a20eb37064fc9970ca3a3da0560fda37fc"
+    },
+    {
+      "bytes": 394644,
+      "path": "runs/libero-captures-v4/task-0/raw.npz",
+      "sha256": "65e9bc743f1bffc9a88e39a17959b91051784e1ea8891b5a8556494a8dd90d49"
+    },
+    {
+      "bytes": 43165,
+      "path": "runs/libero-captures-v4/task-0/wrist_image.png",
+      "sha256": "bb31e9b1016dcca3200908681a93e999dc883857e51ac22ade38dbc027f4e3a1"
+    },
+    {
+      "bytes": 49778,
+      "path": "runs/libero-captures-v4/task-1/image.png",
+      "sha256": "e53b532c78aee212bd6a2c90ff24e41640a262870d068224e4371055d7421911"
+    },
+    {
+      "bytes": 301880,
+      "path": "runs/libero-captures-v4/task-1/observation.npz",
+      "sha256": "3e33bf4790dee7d1aeb686620533e1dfd7ebd9b002bb517ab7f77c378a717303"
+    },
+    {
+      "bytes": 886,
+      "path": "runs/libero-captures-v4/task-1/provenance.json",
+      "sha256": "7ec0523ed13554931e0e854cb4091de186c428e0f9d67a6c0d3ef55906f5103e"
+    },
+    {
+      "bytes": 394644,
+      "path": "runs/libero-captures-v4/task-1/raw.npz",
+      "sha256": "865d726435437885704ee6b6222ff97cb4cd3c7a88ba9b37b383e3f1a1c518c3"
+    },
+    {
+      "bytes": 40911,
+      "path": "runs/libero-captures-v4/task-1/wrist_image.png",
+      "sha256": "1cb80ee6fb81d114958b4e5682797731b5d776ec23df032f2c25c8fe851fbacc"
+    },
+    {
+      "bytes": 49492,
+      "path": "runs/libero-captures-v4/task-2/image.png",
+      "sha256": "6483deadbf905f7ae563c26d40d7ca7aced07eca49fb2ba8f9413fd4d97187a7"
+    },
+    {
+      "bytes": 301880,
+      "path": "runs/libero-captures-v4/task-2/observation.npz",
+      "sha256": "be8bb0534fefb6159f592f70b09206ef36cf4e248cbaaaa7e01d8175d6b7eb53"
+    },
+    {
+      "bytes": 884,
+      "path": "runs/libero-captures-v4/task-2/provenance.json",
+      "sha256": "1c8ab7ab974d649165d18b25a742703b65e69803c994ed7252c72aa69277d1b7"
+    },
+    {
+      "bytes": 394644,
+      "path": "runs/libero-captures-v4/task-2/raw.npz",
+      "sha256": "64a877d42eb0908de92993656667e7215b3ba0e9b16f08b7b4948f6a4429a42c"
+    },
+    {
+      "bytes": 44078,
+      "path": "runs/libero-captures-v4/task-2/wrist_image.png",
+      "sha256": "17aa369d802f80914c0788b6bebc3411b23c8fbff8affeb511591f015b12e7ce"
+    },
+    {
+      "bytes": 37846688,
+      "path": "runs/real-batches-v1/batch-000.pt",
+      "sha256": "6106067b8ab94b7ca3772dde8547798bb41ff0780aa006279db42493044ec7cd"
+    },
+    {
+      "bytes": 37846688,
+      "path": "runs/real-batches-v1/batch-001.pt",
+      "sha256": "0ae312abd7c859df6b54b09a4cab848add669cd6588ee3b00c508d2a6f73288c"
+    },
+    {
+      "bytes": 37848224,
+      "path": "runs/real-batches-v1/batch-002.pt",
+      "sha256": "ad15cc9bb8235b783ecffe72a87212f2624568ce6c11fbec25f46ffdc325ce77"
+    },
+    {
+      "bytes": 37847200,
+      "path": "runs/real-batches-v1/batch-003.pt",
+      "sha256": "e9c17914e6c178486c532c651a1d7a3251b25ff1923ad77bd2242d5b516e798a"
+    },
+    {
+      "bytes": 37844640,
+      "path": "runs/real-batches-v1/batch-004.pt",
+      "sha256": "3e683eaa1cdd5870b833d707fdfac72ac40234d521f74123116ae691f3609f06"
+    },
+    {
+      "bytes": 37847456,
+      "path": "runs/real-batches-v1/batch-005.pt",
+      "sha256": "3db44b03a653c03f73a401e292cff7c3dd379f6a61d323944fcb7404ee0a9fc6"
+    },
+    {
+      "bytes": 37845408,
+      "path": "runs/real-batches-v1/batch-006.pt",
+      "sha256": "d057e8a134917df444aca5c5aa059b25b27bfc1a9c2bcc83de1c4391333d7f26"
+    },
+    {
+      "bytes": 37845664,
+      "path": "runs/real-batches-v1/batch-007.pt",
+      "sha256": "f00d852e4d1232046a212b637675ab6ef541be2dccab30523e0251f44b98c493"
+    },
+    {
+      "bytes": 37845152,
+      "path": "runs/real-batches-v1/batch-008.pt",
+      "sha256": "ea6fca01cc524a94141d2fd8537675f5468d4507984de965419134849bc987a7"
+    },
+    {
+      "bytes": 37844640,
+      "path": "runs/real-batches-v1/batch-009.pt",
+      "sha256": "29d244241f5707aac8426ac6424222f36a890d183c07ef6d49d9e7a10c7d2fc8"
+    },
+    {
+      "bytes": 37843872,
+      "path": "runs/real-batches-v1/batch-010.pt",
+      "sha256": "6a74a7d4f4ad30095028a736069e03ed54137a4811182099ae21d101d0af7da2"
+    },
+    {
+      "bytes": 37844128,
+      "path": "runs/real-batches-v1/batch-011.pt",
+      "sha256": "85b410bca2bfe8cc99fc310512b63036c5ddc5413d6433b645efb4f07800047b"
+    },
+    {
+      "bytes": 18924896,
+      "path": "runs/real-batches-v1/batch-012.pt",
+      "sha256": "d60c9170f6c53948bda2fb9821d121091913c694fab2d03f4d441dea90a12b7e"
+    },
+    {
+      "bytes": 11779,
+      "path": "runs/real-batches-v1/manifest.json",
+      "sha256": "9a1f43ab84cb9466bd4e001de326327894dbccdd050a9715cf8ebe3b3366ddd9"
+    },
+    {
+      "bytes": 7755,
+      "path": "runs/real-batches-v1/processor/chat_template.jinja",
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    },
+    {
+      "bytes": 1191,
+      "path": "runs/real-batches-v1/processor/processor_config.json",
+      "sha256": "d89ef49ce9cd37fbf510158e13c1ef063d9286411c1ec9049932dbe0487143b1"
+    },
+    {
+      "bytes": 20389641,
+      "path": "runs/real-batches-v1/processor/tokenizer.json",
+      "sha256": "0ece0dc37e2fc2021f1d7a2e51fd3b1102f4bc6b11c7f3c4eeb7c60a0bfe1962"
+    },
+    {
+      "bytes": 55358,
+      "path": "runs/real-batches-v1/processor/tokenizer_config.json",
+      "sha256": "e72d276b759ee9060d3f72001e4139dad47a40fbda2e8ef8abaf588862743ef6"
+    },
+    {
+      "bytes": 1519,
+      "path": "weights/a15-base/.gitattributes",
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "bytes": 6658,
+      "path": "weights/a15-base/README.md",
+      "sha256": "400ce5ccd67c7576ca7e22ea02bc642437b230689b679c18c19455ca6a67386a"
+    },
+    {
+      "bytes": 2257,
+      "path": "weights/a15-base/config.json",
+      "sha256": "8b7249cb1b4578f44bdcfd930dde371d825940686c3f9f49d9d60c4861f4e84c"
+    },
+    {
+      "bytes": 5385900721,
+      "path": "weights/a15-base/model.safetensors",
+      "sha256": "9fe03a224b88f041c33dd1aae6bd24364bbae8d85158cf0a32ae9d237bd98851"
+    },
+    {
+      "bytes": 229,
+      "path": "weights/a15-base/model_provenance.json",
+      "sha256": "596fd5b67ebbe8fc017de006f2a3bb55ef41cf61cdec36cfda773c0114cee7e2"
+    },
+    {
+      "bytes": 342646,
+      "path": "weights/a15-base/stats.json",
+      "sha256": "4fbb62be59ae1330e7982c433a28b060d0fa3693708f8779909ab808eed29727"
+    },
+    {
+      "bytes": 1570,
+      "path": "weights/tau0-libero/.gitattributes",
+      "sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930"
+    },
+    {
+      "bytes": 11358,
+      "path": "weights/tau0-libero/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 3130,
+      "path": "weights/tau0-libero/README.md",
+      "sha256": "4c39c5df3f2d5c9bfe4f1d893b249a8995711530eb30ea880f5fe7a8235ad91b"
+    },
+    {
+      "bytes": 1248,
+      "path": "weights/tau0-libero/SHA256SUMS",
+      "sha256": "de235821a91a4a8972ec045321bb0f6108d065d4d97e00d9fb6c7498826166b8"
+    },
+    {
+      "bytes": 7755,
+      "path": "weights/tau0-libero/chat_template.jinja",
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+    },
+    {
+      "bytes": 4872,
+      "path": "weights/tau0-libero/config.json",
+      "sha256": "3e9b1007770f85978b15c0a8219b8199ba4f6ddf4577b27aacbe4d0a56776fa3"
+    },
+    {
+      "bytes": 1172,
+      "path": "weights/tau0-libero/finch_data_spec/libero-eef-robot-prompt-ft/components.json",
+      "sha256": "d999dacbd897edbfd0c2555f2bb30113426df92500b621f29dc8f1c4df3026cf"
+    },
+    {
+      "bytes": 723,
+      "path": "weights/tau0-libero/finch_data_spec/libero-eef-robot-prompt-ft/field_descriptions.json",
+      "sha256": "8323dca93a5ebea757c5a84daf37be1b9263c7e715bef2d4067e70da07f3b257"
+    },
+    {
+      "bytes": 4153,
+      "path": "weights/tau0-libero/finch_data_spec/libero-eef-robot-prompt-ft/norm_stats.json",
+      "sha256": "c89803c38a4cbe596e3eead37f8c2ea0a2d40c2a4400dc4f21c0ee0dc470144d"
+    },
+    {
+      "bytes": 1193,
+      "path": "weights/tau0-libero/finch_data_spec/libero-eef-robot-prompt-ft/spec.json",
+      "sha256": "6a515484531844a5e607c71298c53b654dabeac5aae8916f686020f758ea8c2c"
+    },
+    {
+      "bytes": 6030951200,
+      "path": "weights/tau0-libero/model.safetensors",
+      "sha256": "e03870720cbddbd0f3be44ee929a5d23efb9bf9532f0ac1c1bf676224aacc8ec"
+    },
+    {
+      "bytes": 224,
+      "path": "weights/tau0-libero/model_provenance.json",
+      "sha256": "0a0655897d475694712adfab5c20f8cf286815382196b2f4dcf9f17011a2de44"
+    },
+    {
+      "bytes": 357,
+      "path": "weights/tau0-libero/policy_manifest.json",
+      "sha256": "0f69f02865f9526f8aaf3c62b5d6efb9676a176ece62701c593a247aab813f27"
+    },
+    {
+      "bytes": 1183,
+      "path": "weights/tau0-libero/processor_config.json",
+      "sha256": "f179e50e10e3f4e9a63fb963025d4e6279789096f4f4a9a1c3b040b96b9baed1"
+    },
+    {
+      "bytes": 6317,
+      "path": "weights/tau0-libero/run_spec.json",
+      "sha256": "72ae2d7c8e5bec7a7ace9ed6e0fb19a701bd6e8ad137c09ac119f4ab1e24954d"
+    },
+    {
+      "bytes": 20377353,
+      "path": "weights/tau0-libero/tokenizer.json",
+      "sha256": "4d87abc604b4b3d28ea7ee6a7e85969bfde52de7c4d8bf4d271176a57bf0fe46"
+    },
+    {
+      "bytes": 43067,
+      "path": "weights/tau0-libero/tokenizer_config.json",
+      "sha256": "492c152e22ea041d1a958e8c346c113021bc8374f4d0d013ba063ca685eec1fa"
+    },
+    {
+      "bytes": 1519,
+      "path": "weights/w0-base/.gitattributes",
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "bytes": 28,
+      "path": "weights/w0-base/README.md",
+      "sha256": "98b45ea81164d1e1a1dd82255207053b15cd6c69d922a1c5cf3387ce604d4b74"
+    },
+    {
+      "bytes": 12423420182,
+      "path": "weights/w0-base/pretrain.pt",
+      "sha256": "a6bcf7a1eb2cf3d303e02faca05579cf77f4ac90863a15ff896b7e85ef884a08"
+    }
+  ],
+  "research_training_ready": false
+}

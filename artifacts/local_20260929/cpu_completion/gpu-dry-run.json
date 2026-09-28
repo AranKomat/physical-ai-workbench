@@ -1,0 +1,100 @@
+{
+  "all_planned_jobs_recorded": true,
+  "budget_seconds": 7200,
+  "elapsed_seconds": 5.620904266834259e-05,
+  "executed": false,
+  "jobs": [
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_tau_native.py",
+        "--upstream",
+        "third_party/tau0",
+        "--checkpoint",
+        "weights/tau0-libero",
+        "--input",
+        "runs/libero-captures-v4/task-0/observation.npz",
+        "--instruction",
+        "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "--input-kind",
+        "simulator",
+        "--device",
+        "cuda",
+        "--seed",
+        "7",
+        "--output",
+        "runs/cuda-native/task-0"
+      ],
+      "name": "tau_task_0",
+      "status": "dry_run"
+    },
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_tau_native.py",
+        "--upstream",
+        "third_party/tau0",
+        "--checkpoint",
+        "weights/tau0-libero",
+        "--input",
+        "runs/libero-captures-v4/task-1/observation.npz",
+        "--instruction",
+        "pick up the black bowl next to the ramekin and place it on the plate",
+        "--input-kind",
+        "simulator",
+        "--device",
+        "cuda",
+        "--seed",
+        "7",
+        "--output",
+        "runs/cuda-native/task-1"
+      ],
+      "name": "tau_task_1",
+      "status": "dry_run"
+    },
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_tau_native.py",
+        "--upstream",
+        "third_party/tau0",
+        "--checkpoint",
+        "weights/tau0-libero",
+        "--input",
+        "runs/libero-captures-v4/task-2/observation.npz",
+        "--instruction",
+        "pick up the black bowl from table center and place it on the plate",
+        "--input-kind",
+        "simulator",
+        "--device",
+        "cuda",
+        "--seed",
+        "7",
+        "--output",
+        "runs/cuda-native/task-2"
+      ],
+      "name": "tau_task_2",
+      "status": "dry_run"
+    },
+    {
+      "argv": [
+        ".venv-tau/bin/python",
+        "scripts/probe_w0_numerics.py",
+        "--upstream",
+        "third_party/internw0_delta",
+        "--checkpoint",
+        "weights/w0-base/pretrain.pt",
+        "--contract",
+        "configs/w0_base_audited.json",
+        "--device",
+        "cuda",
+        "--output",
+        "runs/cuda-native/w0-numerical"
+      ],
+      "name": "w0_numerical",
+      "status": "dry_run"
+    }
+  ],
+  "native_vla_qualified": false,
+  "note": "Job exit codes alone are not model qualification; review the numeric/closed-loop reports."
+}

@@ -38,7 +38,7 @@ completed for three task starts with six nonblank images.
 | Fast editor | Lazy Flux2Klein Diffusers wrapper | Not imported/executed | Dependency/model revision, zero-shot quality, robotics LoRA and ROCm |
 | Training loop | Local reference learner, optional DDP | Single-process CPU and two-process Gloo | Production native learner, FSDP2/Megatron, distributed resume |
 | Numerical harness | Hashes, fixed noise/times, forward/sampling/backward/update probes | Exact CPU self-parity | Native captures and CUDA-versus-ROCm checks |
-| NVIDIA batching | Preflight, deadline, job logs and process cleanup | Dry-run and preflight unit tests; no GPU | Fill native jobs/assets before booking window |
+| NVIDIA batching | Preflight, deadline, job logs, cleanup; hashed four-job native plan | 61 files / 24.36 GB hash-validated and four jobs dry-run; no GPU | Host runtime/VRAM preflight, then actual bounded native probes |
 | Primus | Pinned external dependency and integration plan | Not cloned/installed | Complete and qualify actual training integration |
 | BF16/FP8 | Explicit precision paths/guards | Reference CPU FP32 plus CPU BF16-autocast smoke | Actual AMD BF16/FP8 learning and closed-loop qualification |
 | RL | Source pins and algorithm boundary | No robot RL | Correct stochastic-policy loss, actors, rewards and ROCm path |

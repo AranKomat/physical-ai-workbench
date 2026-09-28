@@ -12,7 +12,7 @@ pretrained GPU execution is authorized by this checklist.
 | 5. Vocabulary expansion | CPU complete | Tied/untied tests plus actual tiny Qwen class, exact weight resume and optimizer reload |
 | 6. Donor transfer adapters | CPU contracts complete | Real native reduced W0 and patched A1.5 forward/backward; W0 preconditioned K/V load corrected and exact roundtrip checked |
 | 7. Evaluation protocols | Complete | See EVALUATION_PROTOCOL.md; native nine-episode subset, research budgets and reporting gates |
-| 8. GPU bundles | In progress | Native motor numerical capture command prepared; awaiting real capture/checkpoint inventory |
+| 8. GPU bundles | Preparation complete | 61 files, 24,357,003,414 bytes; all hashes validated, four jobs dry-run; host readiness remains false |
 
 Prepared commands or toy tests are not pretrained-policy qualification. Missing
 hardware-dependent evidence must remain explicitly pending, even after all

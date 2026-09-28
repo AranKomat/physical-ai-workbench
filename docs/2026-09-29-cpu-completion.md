@@ -116,6 +116,15 @@ architecture differences. No success rate is reported yet.
 
 ## 8. GPU bundle
 
+Completed `runs/gpu-bundle-v1/` at code revision
+`cc64d9383c090b1f29148596ecfae8fa5684c6a9`: 61 hashed files totaling
+24,357,003,414 bytes (24.36 GB). The runner validated every required file hash
+and recorded all four jobs as dry runs in `runs/gpu-bundle-dry-run-v1/`.
+Public plan, transfer manifest and dry-run receipts are under
+`artifacts/local_20260929/cpu_completion/`. No checkpoint payload was committed
+or transferred to a host. The final local validation passed all 123 tests,
+reference smoke/resume and exact CPU self-parity; source compilation passed.
+
 `prepare_gpu_bundle.py` assembles explicit file hashes and a transfer manifest,
 excluding caches and Mac virtualenvs. It creates three bounded native Tau
 observation jobs and one W0 numerical job. `probe_w0_numerics.py` captures
