@@ -1,0 +1,37 @@
+{
+  "all_finite": true,
+  "config": {
+    "action_dim": 80,
+    "aux_bins": 17,
+    "aux_weight": 1.0,
+    "brain_layers": 2,
+    "heads": 4,
+    "horizon": 4,
+    "max_text_tokens": 64,
+    "mode": "ki",
+    "motor_layers": 2,
+    "multilayer": true,
+    "vocab_size": 260,
+    "width": 32
+  },
+  "device": "cpu",
+  "fixture_sha256": "056d83741ca69b07be35cae9a742d20865cbc021b3f0b0aae9eccba533296a26",
+  "framework": "portable_pytorch_NOT_Primus_native",
+  "hardware": {
+    "cuda": null,
+    "gpu_available": false,
+    "gpus": [],
+    "hip": null,
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu"
+  },
+  "kind": "random_tiny_reference_NOT_native_W0_A15_Tau",
+  "learning_steps": 6,
+  "native_checkpoint_validated": false,
+  "precision": "fp32",
+  "schema": "pai.oracle.v1",
+  "scope": "reference_model_only",
+  "seed": 17,
+  "tensor_count": 219,
+  "tensor_file_sha256": "d36a917727c56c10629d9a30258eda979d1be0db72c788426a46de46613fda26"
+}

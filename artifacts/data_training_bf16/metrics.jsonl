@@ -1,0 +1,8 @@
+{"epoch": 0, "local_grad_norm": 6.6842360496521, "loss": 3.833399534225464, "step": 1}
+{"epoch": 0, "local_grad_norm": 5.623504161834717, "loss": 3.659372329711914, "step": 2}
+{"epoch": 0, "local_grad_norm": 6.381474494934082, "loss": 3.4547080993652344, "step": 3}
+{"epoch": 0, "local_grad_norm": 5.53933572769165, "loss": 3.4902734756469727, "step": 4}
+{"epoch": 1, "local_grad_norm": 5.101163387298584, "loss": 3.288404941558838, "step": 5}
+{"epoch": 1, "local_grad_norm": 4.738151550292969, "loss": 3.0520379543304443, "step": 6}
+{"epoch": 1, "local_grad_norm": 4.659821033477783, "loss": 2.940697193145752, "step": 7}
+{"epoch": 1, "local_grad_norm": 4.39860725402832, "loss": 2.6515092849731445, "step": 8}

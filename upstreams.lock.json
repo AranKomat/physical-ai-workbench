@@ -1,0 +1,62 @@
+{
+  "format": "pai.upstreams.v1",
+  "inspected_date": "2026-09-29",
+  "method": "GitHub connector GET refs/commits, not git clone",
+  "network_observation": "Direct git ls-remote failed: Could not resolve host github.com",
+  "repositories": [
+    {
+      "name": "primus",
+      "url": "https://github.com/AMD-AGI/Primus.git",
+      "repository": "AMD-AGI/Primus",
+      "observed_branch": "main",
+      "revision": "43e1c9bece1d7a869c4371de7372803808c7021c",
+      "core": true,
+      "role": "AMD runtime; NOT bundled/installed"
+    },
+    {
+      "name": "internw0_delta",
+      "url": "https://github.com/InternRobotics/InternW0-Delta.git",
+      "repository": "InternRobotics/InternW0-Delta",
+      "observed_branch": "main",
+      "revision": "90801baa3bdc7829c1e4989edfe3d0fb2410ea6a",
+      "core": true,
+      "role": "data and native ActionDiT donor"
+    },
+    {
+      "name": "internvla_a",
+      "url": "https://github.com/InternRobotics/InternVLA-A-series.git",
+      "repository": "InternRobotics/InternVLA-A-series",
+      "observed_branch": "master",
+      "revision": "e6fc904f9edbfb14532e97095fc2372202517f76",
+      "core": true,
+      "role": "Qwen VLA reference; default branch is master"
+    },
+    {
+      "name": "tau0",
+      "url": "https://github.com/sii-research/tau-0-vla.git",
+      "repository": "sii-research/tau-0-vla",
+      "observed_branch": "main",
+      "revision": "f1665fbaf624d1468b168e3a54cccc9e326212d9",
+      "core": true,
+      "role": "separate demo policy and high-level reference"
+    },
+    {
+      "name": "miles",
+      "url": "https://github.com/radixark/miles.git",
+      "repository": "radixark/miles",
+      "observed_branch": "main",
+      "revision": "9e4260de047a704208535c0e90c531929879ab40",
+      "core": false,
+      "role": "later token-policy RL"
+    },
+    {
+      "name": "miles_diffusion",
+      "url": "https://github.com/radixark/miles_diffusion.git",
+      "repository": "radixark/miles_diffusion",
+      "observed_branch": "main",
+      "revision": "55582d85cc68a7a90309fca33b4368fe917a2bd1",
+      "core": false,
+      "role": "later flow-RL reference; custom robot ROCm support unqualified"
+    }
+  ]
+}

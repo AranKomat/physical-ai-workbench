@@ -1,0 +1,16 @@
+{
+  "device": "cpu",
+  "dtype": "float32",
+  "final_flow_loss": 0.08029231429100037,
+  "final_total_loss": 0.2763125002384186,
+  "finite_sample": true,
+  "gpu_validated": false,
+  "inactive_output_max_abs": 0.0,
+  "initial_flow_loss": 1.0234715938568115,
+  "initial_total_loss": 4.356045246124268,
+  "interpretation": "Fixed-batch learnability and checkpoint round-trip only. No real policy, OOD, AMD, NVIDIA or FP8 result.",
+  "model_kind": "random_tiny_cpu_fixture_NOT_pretrained_VLA",
+  "reload_max_abs_error": 0.0,
+  "seconds": 0.48845942100001594,
+  "steps": 40
+}

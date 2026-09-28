@@ -1,0 +1,6 @@
+{"episode": "synthetic-0/episode.json", "episode_id": "synthetic-0", "family": "robot", "source": "SYNTHETIC_NOT_ROBOT_DATA", "split": "train", "split_group": "synthetic-physical-0", "synthetic": true}
+{"episode": "synthetic-1/episode.json", "episode_id": "synthetic-1", "family": "robot", "source": "SYNTHETIC_NOT_ROBOT_DATA", "split": "train", "split_group": "synthetic-physical-1", "synthetic": true}
+{"episode": "synthetic-2/episode.json", "episode_id": "synthetic-2", "family": "robot", "source": "SYNTHETIC_NOT_ROBOT_DATA", "split": "train", "split_group": "synthetic-physical-2", "synthetic": true}
+{"episode": "synthetic-3/episode.json", "episode_id": "synthetic-3", "family": "robot", "source": "SYNTHETIC_NOT_ROBOT_DATA", "split": "train", "split_group": "synthetic-physical-3", "synthetic": true}
+{"episode": "synthetic-4/episode.json", "episode_id": "synthetic-4", "family": "robot", "source": "SYNTHETIC_NOT_ROBOT_DATA", "split": "validation", "split_group": "synthetic-physical-4", "synthetic": true}
+{"episode": "synthetic-5/episode.json", "episode_id": "synthetic-5", "family": "robot", "source": "SYNTHETIC_NOT_ROBOT_DATA", "split": "test", "split_group": "synthetic-physical-5", "synthetic": true}

@@ -1,0 +1,19 @@
+{
+  "exact_distributed_resume_supported": false,
+  "goal_fraction": 0.25,
+  "hardware": {
+    "cuda": null,
+    "gpu_available": false,
+    "gpus": [],
+    "hip": null,
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu"
+  },
+  "mode": "ki",
+  "model_kind": "reference_NOT_pretrained_VLA",
+  "native_vla_qualified": false,
+  "precision": "fp32",
+  "seconds": 0.21092186399982893,
+  "steps": 8,
+  "world_size": 1
+}

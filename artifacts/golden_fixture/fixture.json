@@ -1,0 +1,20 @@
+{
+  "config": {
+    "action_dim": 80,
+    "aux_bins": 17,
+    "aux_weight": 1.0,
+    "brain_layers": 2,
+    "heads": 4,
+    "horizon": 4,
+    "max_text_tokens": 64,
+    "mode": "ki",
+    "motor_layers": 2,
+    "multilayer": true,
+    "vocab_size": 260,
+    "width": 32
+  },
+  "fixture_sha256": "056d83741ca69b07be35cae9a742d20865cbc021b3f0b0aae9eccba533296a26",
+  "kind": "random_tiny_reference_NOT_native_W0_A15_Tau",
+  "schema": "pai.oracle.v1",
+  "seed": 17
+}

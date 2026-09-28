@@ -1,0 +1,16 @@
+{
+  "hidden_dim": 1024,
+  "action_dim": 80,
+  "ffn_dim": 4096,
+  "text_dim": 4096,
+  "freq_dim": 256,
+  "eps": 1e-06,
+  "num_heads": 24,
+  "attn_head_dim": 128,
+  "num_layers": 30,
+  "use_gradient_checkpointing": false,
+  "training_time_rtc": {
+    "enabled": false,
+    "max_delay_steps": 16
+  }
+}

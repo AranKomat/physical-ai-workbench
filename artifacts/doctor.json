@@ -1,0 +1,8 @@
+{
+  "torch": "2.10.0+cpu",
+  "python": "3.13.5",
+  "cuda": null,
+  "hip": null,
+  "gpu_available": false,
+  "gpus": []
+}

@@ -1,0 +1,10 @@
+# Observed CPU validation environment, NOT the GPU dependency lock.
+# Python 3.13.5; never install this file over a ROCm PyTorch environment.
+# Install the matching CPU PyTorch wheel from its CPU wheel index when needed.
+torch==2.10.0+cpu
+numpy==2.3.5
+Pillow==12.3.0
+PyYAML==6.0.3
+safetensors==0.7.0
+pytest==9.0.2
+setuptools==82.0.1

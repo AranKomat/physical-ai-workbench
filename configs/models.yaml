@@ -1,0 +1,52 @@
+# Requested candidate identities, not a claim that all configs/weights were fetched.
+# Resolve immutable HF revisions using scripts/resolve_hf.py on the GPU host.
+backbones:
+  development:
+    id: Qwen/Qwen3.5-2B
+    status: public_config_read_no_weights_loaded
+    observed_hidden_size: 2048
+    observed_num_layers: 24
+    observed_model_type: qwen3_5
+  intermediate:
+    id: Qwen/Qwen3.6-35B-A3B
+    status: requested_candidate_verify_on_host
+  large:
+    id: Qwen/Qwen3.8-27B
+    status: requested_candidate_config_fetch_failed_here_verify_on_host
+  dense_fallback:
+    id: Qwen/Qwen3.5-9B
+    status: requested_candidate_verify_on_host
+  optional:
+    id: Qwen/Qwen3.8-Flash-Next
+    status: deferred_memory_throughput_probe
+motors:
+  w0:
+    id: InternRobotics/InternW0-Delta-Base
+    status: source_docs_verified_no_weights_loaded
+    checkpoint_container_key: null
+    checkpoint_action_prefix: null
+    source_schema: must_inspect
+    native_flow_time_scale: null
+    native_flow_direction: null
+    native_velocity_sign: null
+  a15:
+    id: InternRobotics/InternVLA-A1.5-base
+    status: candidate_whole_policy_bringup_and_expert_adapter_pending
+  tau0:
+    id: sii-research/tau-0-vla
+    status: whole_policy_track_not_an_80D_dropin
+    source_action_dimension: 40
+high_level:
+  tau_proposal:
+    id: sii-research/tau-0-vla-proposal
+    status: native_HTTP_payload_and_command_contract_verified_no_inference
+  tau_world:
+    base: stepfun-ai/Step1X-Edit-v1p2
+    adapter: sii-research/tau-0-vla-world-model
+    status: native_command_builder_tested_no_generation
+    observed_default_steps: 28
+  fast_editor:
+    id: black-forest-labs/FLUX.2-klein-4B
+    status: optional_diffusers_wrapper_not_executed_verify_current_ID_and_revision
+    intended_steps: 4
+    robotics_quality_established: false

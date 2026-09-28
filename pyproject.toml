@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physical-ai-workbench"
+version = "0.1.0"
+description = "Auditable, CPU-testable components for Qwen/flow-policy research and a separate Tau0 demo track"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "torch>=2.5", "PyYAML>=6", "Pillow>=10", "safetensors>=0.4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+hf = ["transformers>=5", "accelerate>=1", "huggingface-hub>=0.30"]
+image = ["diffusers>=0.36", "transformers>=5", "accelerate>=1"]
+parquet = ["pyarrow>=17"]
+
+[project.scripts]
+pai = "physical_ai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

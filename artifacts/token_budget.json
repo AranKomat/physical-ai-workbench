@@ -1,0 +1,16 @@
+{
+  "width": 256,
+  "height": 256,
+  "image_count": 9,
+  "text_tokens": 150,
+  "anchor_hz": 1,
+  "patch_size": 16,
+  "merge_size": 2,
+  "measured_total_tokens_per_day": 2000000000.0,
+  "robot_token_fraction": 0.9,
+  "visual_tokens_per_image_estimate": 64,
+  "context_tokens_per_window_estimate": 726,
+  "robot_context_tokens_per_source_hour_one_pass": 2613600,
+  "source_hours_per_day_one_pass": 688.7052341597796,
+  "warning": "2B/day is the user's hypothetical 27B throughput, NOT measured here. Processor counts and motor/vision FLOPs must be profiled. 90% EXAMPLES is not 90% TOKENS."
+}

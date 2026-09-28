@@ -1,0 +1,4 @@
+{"epoch": 0, "local_grad_norm": 7.164118766784668, "loss": 4.012535095214844, "step": 1}
+{"epoch": 0, "local_grad_norm": 5.837848663330078, "loss": 3.6639404296875, "step": 2}
+{"epoch": 1, "local_grad_norm": 6.043051719665527, "loss": 3.4798073768615723, "step": 3}
+{"epoch": 1, "local_grad_norm": 5.28003454208374, "loss": 3.4670498371124268, "step": 4}

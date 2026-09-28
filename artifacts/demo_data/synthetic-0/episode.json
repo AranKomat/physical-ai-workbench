@@ -1,0 +1,48 @@
+{
+  "arrays": "arrays.npz",
+  "calibration": {},
+  "cameras": [
+    "head",
+    "left",
+    "right"
+  ],
+  "contract": {
+    "calibration_valid": false,
+    "control_hz": 10.0,
+    "delta_reference": "successive_target",
+    "frame": "base",
+    "gripper": "zero_closed_one_open",
+    "reference_camera": null,
+    "representation": "pai.eef80.v1",
+    "rotation": "spatial_rotvec_radians"
+  },
+  "embodiment": "synthetic_fixture",
+  "episode_id": "synthetic-0",
+  "family": "robot",
+  "format": "pai.episode.v1",
+  "provenance": {
+    "physics_simulated": false,
+    "purpose": "schema/unit tests only",
+    "synthetic": true
+  },
+  "segments": [
+    {
+      "end": 2,
+      "mistake": null,
+      "quality": null,
+      "start": 0,
+      "subtask": "approach the synthetic square"
+    },
+    {
+      "end": 4,
+      "mistake": null,
+      "quality": null,
+      "start": 2,
+      "subtask": "move the synthetic square"
+    }
+  ],
+  "source": "SYNTHETIC_NOT_ROBOT_DATA",
+  "source_episode_id": "0",
+  "split_group": "synthetic-physical-0",
+  "task": "move colored square (not physics)"
+}

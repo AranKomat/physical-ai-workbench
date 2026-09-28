@@ -1,0 +1,34 @@
+# Planning prior from discussion, not a downloaded corpus or measured mixture.
+outer_example_fractions:
+  robot: 0.90
+  vision_language: 0.10
+# Track per-stream token lengths separately; example fractions != token fractions.
+robot_family_prior:
+  robot: 0.80
+  h2r: 0.10
+  umi: 0.08
+  ego: 0.02
+raw_ego_without_actions_route: auxiliary_vision_language_only
+missing_family_policy: report_and_renormalize_no_fake_zero_actions
+source_catalogue: third_party/internw0_delta/configs/pretrain/sources
+within_family_sampling: uniform_episodes_reference_replace_with_audited_upstream_recipe
+sources_to_resolve:
+  - InternData-A1
+  - AgiBotWorld
+  - RH20T
+  - RoboMIND
+  - RoboMIND2
+  - RoboCOIN
+  - RWRL
+  - ABC
+  - Galaxea
+  - UMI
+annotation_overlays_not_additive_hours:
+  - RoboInter-Data
+invariants:
+  - group_raw_and_annotated_aliases_before_split
+  - source_licenses_and_revisions_retained
+  - no_per_robot_scaling_of_aligned_physical_channels
+  - reference_camera_and_delta_reference_explicit
+  - no_future_frames_in_goal_free_or_deployment_inputs
+  - quality_unknown_is_not_quality_five

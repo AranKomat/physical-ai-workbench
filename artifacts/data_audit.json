@@ -1,0 +1,115 @@
+{
+  "cross_split_leakage": false,
+  "duration_statistics": {
+    "count": 12,
+    "median_seconds": 2.0,
+    "p25_seconds": 2.0,
+    "p75_seconds": 2.0,
+    "p90_seconds": 2.0
+  },
+  "episodes": [
+    {
+      "action_abs_max": 1.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      },
+      "duration_seconds": 3.9,
+      "episode_id": "synthetic-0",
+      "flags": [],
+      "frame_tier": "B",
+      "max_dt": 0.10000000000000009,
+      "median_dt": 0.10000000000000009,
+      "quality": "unknown",
+      "samples": 40,
+      "static_action_fraction": 0.0
+    },
+    {
+      "action_abs_max": 1.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      },
+      "duration_seconds": 3.9,
+      "episode_id": "synthetic-1",
+      "flags": [],
+      "frame_tier": "B",
+      "max_dt": 0.10000000000000009,
+      "median_dt": 0.10000000000000009,
+      "quality": "unknown",
+      "samples": 40,
+      "static_action_fraction": 0.0
+    },
+    {
+      "action_abs_max": 1.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      },
+      "duration_seconds": 3.9,
+      "episode_id": "synthetic-2",
+      "flags": [],
+      "frame_tier": "B",
+      "max_dt": 0.10000000000000009,
+      "median_dt": 0.10000000000000009,
+      "quality": "unknown",
+      "samples": 40,
+      "static_action_fraction": 0.0
+    },
+    {
+      "action_abs_max": 1.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      },
+      "duration_seconds": 3.9,
+      "episode_id": "synthetic-3",
+      "flags": [],
+      "frame_tier": "B",
+      "max_dt": 0.10000000000000009,
+      "median_dt": 0.10000000000000009,
+      "quality": "unknown",
+      "samples": 40,
+      "static_action_fraction": 0.0
+    },
+    {
+      "action_abs_max": 1.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      },
+      "duration_seconds": 3.9,
+      "episode_id": "synthetic-4",
+      "flags": [],
+      "frame_tier": "B",
+      "max_dt": 0.10000000000000009,
+      "median_dt": 0.10000000000000009,
+      "quality": "unknown",
+      "samples": 40,
+      "static_action_fraction": 0.0
+    },
+    {
+      "action_abs_max": 1.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      },
+      "duration_seconds": 3.9,
+      "episode_id": "synthetic-5",
+      "flags": [],
+      "frame_tier": "B",
+      "max_dt": 0.10000000000000009,
+      "median_dt": 0.10000000000000009,
+      "quality": "unknown",
+      "samples": 40,
+      "static_action_fraction": 0.0
+    }
+  ],
+  "semantic_quality_verified": false
+}

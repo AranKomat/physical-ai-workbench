@@ -1,0 +1,34 @@
+version: 5
+research_track:
+  thesis: capability_of_pretrained_brain_not_parameter_scaling_law
+  baseline: qwen_plus_pretrained_continuous_flow_motor
+  own_representation: pai.eef80.v1
+  exact_upstream_schema_compatible: false
+  primary_motor_candidates: [internw0_delta_base, internvla_a15]
+  conditional_third_candidate: tau0_native
+  framework: pytorch_inside_pinned_primus_environment
+  production_launch_ready: false
+  blockers:
+    - native_weights_not_downloaded
+    - donor_time_sign_and_scale_need_parity
+    - checkpoint_slot_and_normalization_contracts_need_audit
+    - native_qwen_and_donor_integration_not_executed
+    - exact_FAST_or_equivalent_auxiliary_targets_not_integrated
+    - primus_megatron_fsdp_fp8_integration_not_qualified
+    - simulator_and_real_robot_evaluation_not_run
+  pretrained_preservation:
+    brain: ki_style_stop_flow_gradient_plus_robot_CE_plus_VL_replay
+    motor: interfaces_then_conditioning_then_low_lr_full
+    lora: optional_preservation_experiment
+  reasoning: concise_subtasks_event_driven_with_verified_memory
+  goals: optional_do_not_infer_deployable_gain_from_privileged_loss
+startup_demo_track:
+  policy: tau0_native_checkpoint_preserve_original_interface
+  research_checkpoint_required: false
+  hardware_actuation_enabled: false
+  required_before_hardware:
+    - native_policy_and_normalization_verified
+    - compatible_robot_and_cameras
+    - target_domain_posttraining_if_needed
+    - independent_limits_watchdog_estop
+    - supervised_safe_bench_trials

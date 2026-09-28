@@ -1,0 +1,8 @@
+["git", "init", "/mnt/data/physical_ai_workbench/third_party/miles"]
+["git", "-C", "/mnt/data/physical_ai_workbench/third_party/miles", "remote", "add", "origin", "https://github.com/radixark/miles.git"]
+["git", "-C", "/mnt/data/physical_ai_workbench/third_party/miles", "fetch", "--depth", "1", "origin", "9e4260de047a704208535c0e90c531929879ab40"]
+["git", "-C", "/mnt/data/physical_ai_workbench/third_party/miles", "checkout", "--detach", "FETCH_HEAD"]
+["git", "init", "/mnt/data/physical_ai_workbench/third_party/miles_diffusion"]
+["git", "-C", "/mnt/data/physical_ai_workbench/third_party/miles_diffusion", "remote", "add", "origin", "https://github.com/radixark/miles_diffusion.git"]
+["git", "-C", "/mnt/data/physical_ai_workbench/third_party/miles_diffusion", "fetch", "--depth", "1", "origin", "55582d85cc68a7a90309fca33b4368fe917a2bd1"]
+["git", "-C", "/mnt/data/physical_ai_workbench/third_party/miles_diffusion", "checkout", "--detach", "FETCH_HEAD"]

@@ -1,0 +1,247 @@
+........................................................................ [ 77%]
+.....................                                                    [100%]
+93 passed in 1.53s
+{
+  "model_kind": "random_tiny_cpu_fixture_NOT_pretrained_VLA",
+  "device": "cpu",
+  "dtype": "float32",
+  "steps": 40,
+  "initial_flow_loss": 1.0234715938568115,
+  "final_flow_loss": 0.08029231429100037,
+  "initial_total_loss": 4.356045246124268,
+  "final_total_loss": 0.2763125002384186,
+  "reload_max_abs_error": 0.0,
+  "finite_sample": true,
+  "inactive_output_max_abs": 0.0,
+  "seconds": 0.48845942100001594,
+  "gpu_validated": false,
+  "interpretation": "Fixed-batch learnability and checkpoint round-trip only. No real policy, OOD, AMD, NVIDIA or FP8 result."
+}
+{
+  "manifest": "artifacts/demo_data/manifest.jsonl",
+  "synthetic": true
+}
+{
+  "episodes": [
+    {
+      "episode_id": "synthetic-0",
+      "samples": 40,
+      "duration_seconds": 3.9,
+      "median_dt": 0.10000000000000009,
+      "max_dt": 0.10000000000000009,
+      "action_abs_max": 1.0,
+      "frame_tier": "B",
+      "flags": [],
+      "quality": "unknown",
+      "static_action_fraction": 0.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      }
+    },
+    {
+      "episode_id": "synthetic-1",
+      "samples": 40,
+      "duration_seconds": 3.9,
+      "median_dt": 0.10000000000000009,
+      "max_dt": 0.10000000000000009,
+      "action_abs_max": 1.0,
+      "frame_tier": "B",
+      "flags": [],
+      "quality": "unknown",
+      "static_action_fraction": 0.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      }
+    },
+    {
+      "episode_id": "synthetic-2",
+      "samples": 40,
+      "duration_seconds": 3.9,
+      "median_dt": 0.10000000000000009,
+      "max_dt": 0.10000000000000009,
+      "action_abs_max": 1.0,
+      "frame_tier": "B",
+      "flags": [],
+      "quality": "unknown",
+      "static_action_fraction": 0.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      }
+    },
+    {
+      "episode_id": "synthetic-3",
+      "samples": 40,
+      "duration_seconds": 3.9,
+      "median_dt": 0.10000000000000009,
+      "max_dt": 0.10000000000000009,
+      "action_abs_max": 1.0,
+      "frame_tier": "B",
+      "flags": [],
+      "quality": "unknown",
+      "static_action_fraction": 0.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      }
+    },
+    {
+      "episode_id": "synthetic-4",
+      "samples": 40,
+      "duration_seconds": 3.9,
+      "median_dt": 0.10000000000000009,
+      "max_dt": 0.10000000000000009,
+      "action_abs_max": 1.0,
+      "frame_tier": "B",
+      "flags": [],
+      "quality": "unknown",
+      "static_action_fraction": 0.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      }
+    },
+    {
+      "episode_id": "synthetic-5",
+      "samples": 40,
+      "duration_seconds": 3.9,
+      "median_dt": 0.10000000000000009,
+      "max_dt": 0.10000000000000009,
+      "action_abs_max": 1.0,
+      "frame_tier": "B",
+      "flags": [],
+      "quality": "unknown",
+      "static_action_fraction": 0.0,
+      "camera_frozen_fraction": {
+        "head": 0.5128205128205128,
+        "left": 0.5128205128205128,
+        "right": 0.5128205128205128
+      }
+    }
+  ],
+  "duration_statistics": {
+    "count": 12,
+    "p25_seconds": 2.0,
+    "median_seconds": 2.0,
+    "p75_seconds": 2.0,
+    "p90_seconds": 2.0
+  },
+  "cross_split_leakage": false,
+  "semantic_quality_verified": false
+}
+{
+  "pairs": 36,
+  "manifest": "artifacts/goal_pairs/pairs.jsonl",
+  "generated_images": 0,
+  "warning": "Targets are privileged real-future images, never deployment inputs."
+}
+{
+  "fixture_sha256": "056d83741ca69b07be35cae9a742d20865cbc021b3f0b0aae9eccba533296a26",
+  "seed": 17,
+  "config": {
+    "action_dim": 80,
+    "horizon": 4,
+    "width": 32,
+    "heads": 4,
+    "brain_layers": 2,
+    "motor_layers": 2,
+    "vocab_size": 260,
+    "aux_bins": 17,
+    "max_text_tokens": 64,
+    "mode": "ki",
+    "multilayer": true,
+    "aux_weight": 1.0
+  },
+  "kind": "random_tiny_reference_NOT_native_W0_A15_Tau",
+  "schema": "pai.oracle.v1"
+}
+{
+  "config": {
+    "action_dim": 80,
+    "aux_bins": 17,
+    "aux_weight": 1.0,
+    "brain_layers": 2,
+    "heads": 4,
+    "horizon": 4,
+    "max_text_tokens": 64,
+    "mode": "ki",
+    "motor_layers": 2,
+    "multilayer": true,
+    "vocab_size": 260,
+    "width": 32
+  },
+  "fixture_sha256": "056d83741ca69b07be35cae9a742d20865cbc021b3f0b0aae9eccba533296a26",
+  "kind": "random_tiny_reference_NOT_native_W0_A15_Tau",
+  "schema": "pai.oracle.v1",
+  "seed": 17,
+  "device": "cpu",
+  "precision": "fp32",
+  "hardware": {
+    "torch": "2.10.0+cpu",
+    "python": "3.13.5",
+    "cuda": null,
+    "hip": null,
+    "gpu_available": false,
+    "gpus": []
+  },
+  "learning_steps": 6,
+  "scope": "reference_model_only",
+  "native_checkpoint_validated": false,
+  "framework": "portable_pytorch_NOT_Primus_native",
+  "tensor_count": 219,
+  "all_finite": true,
+  "tensor_file_sha256": "d36a917727c56c10629d9a30258eda979d1be0db72c788426a46de46613fda26"
+}
+{
+  "config": {
+    "action_dim": 80,
+    "aux_bins": 17,
+    "aux_weight": 1.0,
+    "brain_layers": 2,
+    "heads": 4,
+    "horizon": 4,
+    "max_text_tokens": 64,
+    "mode": "ki",
+    "motor_layers": 2,
+    "multilayer": true,
+    "vocab_size": 260,
+    "width": 32
+  },
+  "fixture_sha256": "056d83741ca69b07be35cae9a742d20865cbc021b3f0b0aae9eccba533296a26",
+  "kind": "random_tiny_reference_NOT_native_W0_A15_Tau",
+  "schema": "pai.oracle.v1",
+  "seed": 17,
+  "device": "cpu",
+  "precision": "fp32",
+  "hardware": {
+    "torch": "2.10.0+cpu",
+    "python": "3.13.5",
+    "cuda": null,
+    "hip": null,
+    "gpu_available": false,
+    "gpus": []
+  },
+  "learning_steps": 6,
+  "scope": "reference_model_only",
+  "native_checkpoint_validated": false,
+  "framework": "portable_pytorch_NOT_Primus_native",
+  "tensor_count": 219,
+  "all_finite": true,
+  "tensor_file_sha256": "d36a917727c56c10629d9a30258eda979d1be0db72c788426a46de46613fda26"
+}
+{
+  "numeric_pass": true,
+  "atol": 0.0,
+  "rtol": 0.0,
+  "cuda_rocm_pair": false,
+  "native_vla_qualified": false,
+  "scope": "reference_model_only",
+  "note": "Tolerance is an explicit diagnostic setting, not a universal success criterion. Native-module and closed-loop checks still required."
+}

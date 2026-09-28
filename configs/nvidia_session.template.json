@@ -1,0 +1,26 @@
+{
+  "ready_for_cuda": false,
+  "note": "Populate native donor fixture jobs and hashes before reserving NVIDIA time. Reference-only pass is insufficient.",
+  "required_files": [],
+  "jobs": [
+    {
+      "name": "reference_bf16",
+      "argv": [
+        "python",
+        "-m",
+        "physical_ai",
+        "probe",
+        "artifacts/golden_fixture",
+        "--output",
+        "runs/cuda_reference",
+        "--device",
+        "cuda",
+        "--precision",
+        "bf16",
+        "--learning-steps",
+        "20"
+      ],
+      "timeout_seconds": 300
+    }
+  ]
+}

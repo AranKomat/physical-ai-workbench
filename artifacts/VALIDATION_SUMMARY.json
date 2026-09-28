@@ -1,0 +1,129 @@
+{
+  "schema": "pai.validation_summary.v1",
+  "project_date": "2026-09-29",
+  "recorded_utc": "2026-09-28T19:01:57.485829+00:00",
+  "environment": {
+    "torch": "2.10.0+cpu",
+    "python": "3.13.5",
+    "cuda": null,
+    "hip": null,
+    "gpu_available": false,
+    "gpus": []
+  },
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "safetensors": "0.7.0",
+    "pytest": "9.0.2",
+    "setuptools": "82.0.1"
+  },
+  "tests": {
+    "count": 93,
+    "failures_or_errors": 0,
+    "skipped": 0,
+    "passed": 93,
+    "report": "artifacts/pytest.xml"
+  },
+  "fixed_batch_reference_smoke": {
+    "device": "cpu",
+    "dtype": "float32",
+    "final_flow_loss": 0.08029231429100037,
+    "final_total_loss": 0.2763125002384186,
+    "finite_sample": true,
+    "gpu_validated": false,
+    "inactive_output_max_abs": 0.0,
+    "initial_flow_loss": 1.0234715938568115,
+    "initial_total_loss": 4.356045246124268,
+    "interpretation": "Fixed-batch learnability and checkpoint round-trip only. No real policy, OOD, AMD, NVIDIA or FP8 result.",
+    "model_kind": "random_tiny_cpu_fixture_NOT_pretrained_VLA",
+    "reload_max_abs_error": 0.0,
+    "seconds": 0.48845942100001594,
+    "steps": 40
+  },
+  "canonical_data_training": {
+    "exact_distributed_resume_supported": false,
+    "goal_fraction": 0.25,
+    "hardware": {
+      "cuda": null,
+      "gpu_available": false,
+      "gpus": [],
+      "hip": null,
+      "python": "3.13.5",
+      "torch": "2.10.0+cpu"
+    },
+    "mode": "ki",
+    "model_kind": "reference_NOT_pretrained_VLA",
+    "native_vla_qualified": false,
+    "precision": "fp32",
+    "seconds": 0.21092186399982893,
+    "steps": 8,
+    "world_size": 1
+  },
+  "cpu_bf16_autocast_smoke": {
+    "exact_distributed_resume_supported": false,
+    "goal_fraction": 0,
+    "hardware": {
+      "cuda": null,
+      "gpu_available": false,
+      "gpus": [],
+      "hip": null,
+      "python": "3.13.5",
+      "torch": "2.10.0+cpu"
+    },
+    "mode": "ki",
+    "model_kind": "reference_NOT_pretrained_VLA",
+    "native_vla_qualified": false,
+    "precision": "bf16",
+    "seconds": 0.3027824529999634,
+    "steps": 8,
+    "world_size": 1
+  },
+  "two_process_cpu_gloo": {
+    "exact_distributed_resume_supported": false,
+    "goal_fraction": 0,
+    "hardware": {
+      "cuda": null,
+      "gpu_available": false,
+      "gpus": [],
+      "hip": null,
+      "python": "3.13.5",
+      "torch": "2.10.0+cpu"
+    },
+    "mode": "ki",
+    "model_kind": "reference_NOT_pretrained_VLA",
+    "native_vla_qualified": false,
+    "precision": "fp32",
+    "seconds": 0.14742677399999593,
+    "steps": 4,
+    "world_size": 2
+  },
+  "cpu_self_parity": {
+    "numeric_pass": true,
+    "tensor_count": 219,
+    "atol": 0.0,
+    "rtol": 0.0,
+    "cuda_rocm_pair": false,
+    "native_vla_qualified": false
+  },
+  "packaging_checks": {
+    "editable_install_executed": true,
+    "pinned_source_bootstrap": "dry_run_only",
+    "nvidia_batch_runner": "dry_run_and_preflight_unit_tests_only",
+    "github_connector_source_inspection": true,
+    "direct_git_clone_succeeded": false
+  },
+  "not_executed": [
+    "native pretrained Qwen/W0/A1.5/Tau inference or training",
+    "any AMD or NVIDIA GPU computation",
+    "CUDA-versus-ROCm parity",
+    "FP8 training",
+    "Primus/Megatron/FSDP2 integration",
+    "real image generation or robotics LoRA",
+    "closed-loop simulator benchmarks",
+    "physical robot trials",
+    "robot reinforcement learning"
+  ],
+  "interpretation": "CPU correctness/reference-integration evidence only; not a trained robot or hardware performance result."
+}

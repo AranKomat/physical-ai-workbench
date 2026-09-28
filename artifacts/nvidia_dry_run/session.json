@@ -1,0 +1,29 @@
+{
+  "all_planned_jobs_recorded": true,
+  "budget_seconds": 7200,
+  "elapsed_seconds": 8.261999937531073e-06,
+  "executed": false,
+  "jobs": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "physical_ai",
+        "probe",
+        "artifacts/golden_fixture",
+        "--output",
+        "runs/cuda_reference",
+        "--device",
+        "cuda",
+        "--precision",
+        "bf16",
+        "--learning-steps",
+        "20"
+      ],
+      "name": "reference_bf16",
+      "status": "dry_run"
+    }
+  ],
+  "native_vla_qualified": false,
+  "note": "Job exit codes alone are not model qualification; review the numeric/closed-loop reports."
+}

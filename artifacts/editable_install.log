@@ -1,0 +1,14 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///mnt/data/physical_ai_workbench
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: physical-ai-workbench
+  Building editable for physical-ai-workbench (pyproject.toml): started
+  Building editable for physical-ai-workbench (pyproject.toml): finished with status 'done'
+  Created wheel for physical-ai-workbench: filename=physical_ai_workbench-0.1.0-0.editable-py3-none-any.whl size=3817 sha256=76c91f8fe8d4a1cbfa7588e2f8f80d0d5e4f9a56819dcf7a4194a3eae0336584
+  Stored in directory: /tmp/pip-ephem-wheel-cache-aa82ncvh/wheels/06/23/7e/4622387f92e7311e3b681cafe403b54641f63f8247775f3978
+Successfully built physical-ai-workbench
+Installing collected packages: physical-ai-workbench
+Successfully installed physical-ai-workbench-0.1.0

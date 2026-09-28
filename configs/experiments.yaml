@@ -1,0 +1,58 @@
+# Dependency-ordered bundles; do not run a full Cartesian product.
+experiments:
+  E0_cpu:
+    state: implemented_CPU_testable
+    commands: [scripts/validate_cpu.sh]
+    claim: plumbing_only
+  E1_native_parity:
+    state: needs_weights_native_capture_and_GPU
+    requires: [E0_cpu]
+    goal: same_native_checkpoint_forward_sampling_backward_and_updates_on_CUDA_and_ROCm
+  E2_motor_transfer:
+    state: planned
+    requires: [E1_native_parity]
+    arms: [A15_pretrained, W0_Delta_Base]
+    conditional_arm: tau0_native
+    report: [robot_success, preserved_competence, tokens_to_target, node_hours, failure_types]
+    note: architectures_differ_this_is_donor_system_transfer_not_pure_weight_only_ablation
+  E3_protection:
+    state: gradient_mechanics_tested_real_efficacy_pending
+    requires: [E2_motor_transfer]
+    default: KI_plus_VL_replay_and_staged_motor_adaptation
+    cheap_control: short_joint_training_curve
+    report: [robot_success, grounding_retention, VQA_retention, update_norms]
+  E4_cognition:
+    state: interfaces_tested_policy_efficacy_pending
+    requires: [E3_protection]
+    default: compact_subtask_and_bounded_history
+    conditional: [multilayer_routing, self_grounded_crop, corrupted_memory_training]
+  E5_goals:
+    state: pair_export_and_leakage_guards_tested_generator_pending
+    requires: [E3_protection]
+    arms:
+      G0: no_goal
+      G1: real_future_oracle_diagnostic_with_dropout
+      G2: generated_goal_train_and_deployment_matched
+    report: [goal_free_success, oracle_goal_success, generated_goal_success, generation_cost, controller_robustness]
+    promotion_rule: only_promote_based_on_deployable_success_and_latency_not_easier_conditional_loss
+  E6_quality_tokens:
+    state: planned
+    requires: [E3_protection]
+    variants: [same_tokens_curated_vs_minimal, half_one_two_token_budget]
+  E7_backbone_capability:
+    state: planned
+    requires: [E3_protection]
+    candidates: [Qwen3.5_2B, Qwen3.6_35B_A3B, Qwen3.8_27B]
+    comparisons: [equal_tokens, equal_node_hours]
+    emphasis: semantic_OOD_not_easy_IID
+  D0_tau_demo:
+    state: native_scripts_and_API_bridge_prepared_GPU_hardware_pending
+    independent_of: [E6_quality_tokens, E7_backbone_capability]
+    default: intact_tau0_native_policy_and_proposal
+  R0_rl:
+    state: explicitly_deferred
+    requires: [strong_SFT_checkpoint, native_parity]
+    precision: bf16_first
+    token_reference: miles
+    flow_reference: miles_diffusion
+    unsupported_assumption: deterministic_flow_has_cheap_action_logprobs
