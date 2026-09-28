@@ -2,6 +2,10 @@
 
 GPU rental is deferred at the user's request. No previous host was contacted.
 
+Follow-up: `2026-09-29-native-cpu.md` records the tested CPU-only dependency
+workaround and successful native data/model imports. The initial failures below
+are retained as history, not the current import status.
+
 ## Measured results
 
 - Complete Tau LIBERO export downloaded at revision

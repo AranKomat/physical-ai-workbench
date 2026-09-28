@@ -7,12 +7,15 @@ and the real Qwen3.5-2B processor passes multimodal prefix/CE separation checks.
 See `2026-09-29-integration.md` for evidence and the first native reproduction plan.
 See `2026-09-29-cpu-preparation.md` for the completed Tau weight audit, real A2D
 record audit, deferred GPU access and unresolved native dependency conflict.
+The follow-up `2026-09-29-native-cpu.md` records a tested, explicitly overridden
+CPU dependency setup: native model imports, 23 upstream tests, and three decoded
+real A2D windows. GPU inference is still unexecuted.
 
 | Area | Implemented | Executed here | Remaining |
 |---|---|---|---|
 | Physical action contract | Versioned 80D research schema, masks, explicit native channel mapping | CPU tests | Audit each donor/source's actual slot semantics |
 | Geometry | SO(3)/SE(3), camera EEF delta conversion and inverse | CPU round-trip/edge tests | Source FK, wrist-camera timestamp conventions, native controller audit |
-| Data | JSON/NPZ episodes, validation, split groups, sparse history, windows, family sampler | Synthetic episode round-trip and Dataset training | Scalable LeRobot/video reading and source-specific conversion |
+| Data | JSON/NPZ episodes, validation, split groups, sparse history, windows, family sampler; native Tau data probe | Synthetic episode training; three real A2D windows through native LeRobot/PyAV, camera decoding and 40D conversion | Connect native windows to research collator and action codec; temporal/geometry audits |
 | Quality | Numeric checks, unknown metadata, frozen/static diagnostics | CPU tests | Calibrated semantic/kinematic quality judgments |
 | Reference policy | Tiny image/text brain + cross-attention flow motor | Synthetic CPU learning | Not a pretrained VLA |
 | KI mechanics | Stop flow gradients before bridge; auxiliary AR loss | Gradient and leakage tests | Real FAST/equivalent labels and full native Qwen CE integration |
@@ -22,7 +25,7 @@ record audit, deferred GPU access and unresolved native dependency conflict.
 | Native Qwen | Lazy HF wrapper, prefix/CE separation, composition with motor | Fake-HF interface tests only | Install HF, load actual weights, validate multimodal processor and memory |
 | Native multimodal collation | Observation image processing, assistant-only CE masks, independent prefix/auxiliary forwards | Actual pinned Qwen3.5-2B processor on synthetic one/two-camera examples; target independence verified | Real action-codec labels, dataset windows/state/geometry integration, pretrained forward/backward |
 | A1.5 | Pin and integration plan | No native inference | Native policy/expert adapter and checkpoint transfer |
-| Tau0 | Pin, proposal client, world commands, export audit, unqualified native probe | Full pinned LIBERO export checksums/header and A2D record audit | Resolve LeRobot/Transformers dependency conflict; matched fixture and native inference; start services |
+| Tau0 | Pin, proposal client, world commands, export audit, unqualified native inference probe, CPU environment recipe | Full LIBERO export audit; native model imports; 23 upstream adapter/wire/evaluation tests; real A2D preprocessing | Matched LIBERO fixture and native inference; qualify CUDA dependencies and services |
 | Visual goals | Future-pair export, goal provenance guard, cache, generator jobs | Synthetic-image tests/exports | Actual generated images and downstream success study |
 | Fast editor | Lazy Flux2Klein Diffusers wrapper | Not imported/executed | Dependency/model revision, zero-shot quality, robotics LoRA and ROCm |
 | Training loop | Local reference learner, optional DDP | Single-process CPU and two-process Gloo | Production native learner, FSDP2/Megatron, distributed resume |
