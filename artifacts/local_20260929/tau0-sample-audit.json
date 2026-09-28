@@ -1,0 +1,50 @@
+{
+  "action_shape": [
+    36
+  ],
+  "compatible_with_libero_checkpoint": false,
+  "complete_10_frame_windows": 9244,
+  "episode_lengths": {
+    "0": 584,
+    "1": 475,
+    "10": 446,
+    "11": 422,
+    "12": 410,
+    "13": 410,
+    "14": 386,
+    "15": 396,
+    "16": 444,
+    "17": 361,
+    "18": 304,
+    "19": 390,
+    "2": 291,
+    "20": 363,
+    "21": 303,
+    "22": 356,
+    "23": 348,
+    "24": 317,
+    "3": 356,
+    "4": 363,
+    "5": 352,
+    "6": 316,
+    "7": 326,
+    "8": 308,
+    "9": 442
+  },
+  "files": {
+    "data/chunk-000/file-000.parquet": "71eb6d16689ec42a78351e1069b5898a92d447e36141f4658bbc0b67417af69c",
+    "meta/info.json": "be3eb5170bcd153842e4c55b72557c2c7c2353211518b79eb8424171455227f1",
+    "videos/observation.images.hand_left/chunk-000/file-000.mp4": "495ef0569a419d0c51c39bcc4441d8ff5173efadb4ad20e776b1f27d4c7af50b",
+    "videos/observation.images.hand_right/chunk-000/file-000.mp4": "8b7f9ee4578ede13a1e68f8cf519092d5d8b2c2a2f008a6090d4964c23af95a8",
+    "videos/observation.images.top_head/chunk-000/file-000.mp4": "5936f642d3ae30cca85fbf999f87201949952ca2f4099572f6fde288797256ce"
+  },
+  "fps": 30,
+  "frames": 9469,
+  "native_conversion_verified": false,
+  "note": "Real A2D data audit only; windows are not yet encoded training examples.",
+  "robot_type": "A2D",
+  "state_shape": [
+    163
+  ],
+  "video_decode_verified": false
+}

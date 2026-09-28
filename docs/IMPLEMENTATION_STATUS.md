@@ -2,9 +2,11 @@
 
 This file is the boundary between executable work and planned integration. A CPU pass is not a pretrained-policy result.
 
-Continuation on 2026-09-29: four core pinned sources cloned, 98 local tests pass,
+Continuation on 2026-09-29: four core pinned sources cloned, 101 local tests pass,
 and the real Qwen3.5-2B processor passes multimodal prefix/CE separation checks.
 See `2026-09-29-integration.md` for evidence and the first native reproduction plan.
+See `2026-09-29-cpu-preparation.md` for the completed Tau weight audit, real A2D
+record audit, deferred GPU access and unresolved native dependency conflict.
 
 | Area | Implemented | Executed here | Remaining |
 |---|---|---|---|
@@ -20,7 +22,7 @@ See `2026-09-29-integration.md` for evidence and the first native reproduction p
 | Native Qwen | Lazy HF wrapper, prefix/CE separation, composition with motor | Fake-HF interface tests only | Install HF, load actual weights, validate multimodal processor and memory |
 | Native multimodal collation | Observation image processing, assistant-only CE masks, independent prefix/auxiliary forwards | Actual pinned Qwen3.5-2B processor on synthetic one/two-camera examples; target independence verified | Real action-codec labels, dataset windows/state/geometry integration, pretrained forward/backward |
 | A1.5 | Pin and integration plan | No native inference | Native policy/expert adapter and checkpoint transfer |
-| Tau0 | Pin, proposal HTTP payload/client, world CLI command builder | Payload/command tests only | Start native services; preserve native low-level contract |
+| Tau0 | Pin, proposal client, world commands, export audit, unqualified native probe | Full pinned LIBERO export checksums/header and A2D record audit | Resolve LeRobot/Transformers dependency conflict; matched fixture and native inference; start services |
 | Visual goals | Future-pair export, goal provenance guard, cache, generator jobs | Synthetic-image tests/exports | Actual generated images and downstream success study |
 | Fast editor | Lazy Flux2Klein Diffusers wrapper | Not imported/executed | Dependency/model revision, zero-shot quality, robotics LoRA and ROCm |
 | Training loop | Local reference learner, optional DDP | Single-process CPU and two-process Gloo | Production native learner, FSDP2/Megatron, distributed resume |
