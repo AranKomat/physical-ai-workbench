@@ -2,7 +2,7 @@
 
 This file is the boundary between executable work and planned integration. A CPU pass is not a pretrained-policy result.
 
-Continuation on 2026-09-29: four core pinned sources cloned, 101 local tests pass,
+Continuation on 2026-09-29: four core pinned sources cloned, 108 local tests pass,
 and the real Qwen3.5-2B processor passes multimodal prefix/CE separation checks.
 See `2026-09-29-integration.md` for evidence and the first native reproduction plan.
 See `2026-09-29-cpu-preparation.md` for the completed Tau weight audit, real A2D
@@ -10,6 +10,8 @@ record audit, deferred GPU access and unresolved native dependency conflict.
 The follow-up `2026-09-29-native-cpu.md` records a tested, explicitly overridden
 CPU dependency setup: native model imports, 23 upstream tests, and three decoded
 real A2D windows. GPU inference is still unexecuted.
+`2026-09-29-real-action-labels.md` adds real FAST/Qwen label collation and a
+synthetic-tested native LIBERO fixture converter; genuine capture remains open.
 
 | Area | Implemented | Executed here | Remaining |
 |---|---|---|---|
@@ -18,12 +20,12 @@ real A2D windows. GPU inference is still unexecuted.
 | Data | JSON/NPZ episodes, validation, split groups, sparse history, windows, family sampler; native Tau data probe | Synthetic episode training; three real A2D windows through native LeRobot/PyAV, camera decoding and 40D conversion | Connect native windows to research collator and action codec; temporal/geometry audits |
 | Quality | Numeric checks, unknown metadata, frozen/static diagnostics | CPU tests | Calibrated semantic/kinematic quality judgments |
 | Reference policy | Tiny image/text brain + cross-attention flow motor | Synthetic CPU learning | Not a pretrained VLA |
-| KI mechanics | Stop flow gradients before bridge; auxiliary AR loss | Gradient and leakage tests | Real FAST/equivalent labels and full native Qwen CE integration |
+| KI mechanics | Stop flow gradients before bridge; auxiliary AR loss; checked FAST labels | Gradient/leakage tests; three real native windows encoded with FAST and Qwen CE masks | Real pretrained CE/flow forward-backward, embedding expansion and donor integration |
 | Motor preservation | Reference parameter groups/stages, LoRA residual | CPU tests | Native donor-specific grouping and retention evaluation |
 | Layer routing | Learned scalar layer mixer | CPU tests | No LayerRoute reproduction or claimed gains |
 | Native W0 | Signature-matched wrapper; strict extraction/loading; explicit time/sign conversion | Fake-native contract tests only | Download actual Base weights, inspect keys and normalize; import and qualify native source |
 | Native Qwen | Lazy HF wrapper, prefix/CE separation, composition with motor | Fake-HF interface tests only | Install HF, load actual weights, validate multimodal processor and memory |
-| Native multimodal collation | Observation image processing, assistant-only CE masks, independent prefix/auxiliary forwards | Actual pinned Qwen3.5-2B processor on synthetic one/two-camera examples; target independence verified | Real action-codec labels, dataset windows/state/geometry integration, pretrained forward/backward |
+| Native multimodal collation | Observation processing, assistant-only CE masks, independent prefix/auxiliary forwards | Pinned Qwen processor on synthetic and real three-camera/FAST examples; target independence and complete action-code retention verified | Broader source normalization, state/geometry integration, pretrained forward/backward |
 | A1.5 | Pin and integration plan | No native inference | Native policy/expert adapter and checkpoint transfer |
 | Tau0 | Pin, proposal client, world commands, export audit, unqualified native inference probe, CPU environment recipe | Full LIBERO export audit; native model imports; 23 upstream adapter/wire/evaluation tests; real A2D preprocessing | Matched LIBERO fixture and native inference; qualify CUDA dependencies and services |
 | Visual goals | Future-pair export, goal provenance guard, cache, generator jobs | Synthetic-image tests/exports | Actual generated images and downstream success study |
