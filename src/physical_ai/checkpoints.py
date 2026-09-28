@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Mapping
 import os
 import tempfile
+import zipfile
 import torch
 from torch import Tensor, nn
 from .io import sha256_file
@@ -21,7 +22,7 @@ def read_tensor_state(path: str | Path, key_path: str = "") -> dict[str, Tensor]
     else:
         # No unrestricted pickle fallback. Convert trusted legacy upstream files
         # in an isolated environment if weights_only rejects their container.
-        state = torch.load(p, map_location="cpu", weights_only=True)
+        state = torch.load(p, map_location="cpu", weights_only=True, mmap=zipfile.is_zipfile(p))
     for part in filter(None, key_path.split(".")):
         if not isinstance(state, dict) or part not in state:
             raise ValueError(f"checkpoint key path missing: {key_path}")

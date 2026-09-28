@@ -1,0 +1,9 @@
+{
+  "checkpoint_sha256": "a6bcf7a1eb2cf3d303e02faca05579cf77f4ac90863a15ff896b7e85ef884a08",
+  "key_and_shape_match": true,
+  "parameter_elements": 1209779280,
+  "pretrained_forward": false,
+  "source_context_dim": 2048,
+  "tensor_count": 824,
+  "tensor_values_loaded_or_checked": false
+}

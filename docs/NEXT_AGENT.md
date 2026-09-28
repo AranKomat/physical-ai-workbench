@@ -1,5 +1,16 @@
 # Next research agent: start here
 
+## Latest continuation: 2026-09-29
+
+Read `2026-09-29-cpu-completion.md` and `CPU_WORK_PLAN.md` first. These supersede
+the older preparation gaps below: real LIBERO captures, 50 real FAST windows,
+vocabulary resume, full donor inventories and reduced native CPU adapters now
+exist. W0 Base uses `mot` / `mixtures.action.` with source context width 2048;
+use `configs/w0_base_audited.json` and preserve its trained K/V projections.
+Pretrained inference and research training remain unexecuted. Do not rent or
+contact a GPU host until the user supplies one. Follow `GPU_RUNTIME_PREPARATION.md`
+and `EVALUATION_PROTOCOL.md` for the next bounded hardware session.
+
 ## 1. Confirm the handoff, not the old chat claims
 
 Read `HANDOFF_V5.md` and `IMPLEMENTATION_STATUS.md`. The prior reported saved implementation was missing in this runtime; this is a fresh rebuilt deliverable. The v5 plan supersedes the obsolete v1 random-head/4B-first plan.

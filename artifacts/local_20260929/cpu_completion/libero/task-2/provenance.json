@@ -1,0 +1,23 @@
+{
+  "input_kind": "simulator",
+  "suite": "libero_spatial",
+  "task_id": 2,
+  "instruction": "pick up the black bowl from table center and place it on the plate",
+  "episode": 0,
+  "seed": 7,
+  "settle_actions": 10,
+  "initial_states_sha256": "27d5b81d739f969e40c72b6c88699e57a91ea61209946b21c593aae5990689cb",
+  "selected_initial_state_sha256": "408c455fb617e5320060d643ef80ec2035d4e98600659cc3deb5a1e85482bf76",
+  "bddl_sha256": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+  "raw_sha256": "64a877d42eb0908de92993656667e7215b3ba0e9b16f08b7b4948f6a4429a42c",
+  "observation_sha256": "be8bb0534fefb6159f592f70b09206ef36cf4e248cbaaaa7e01d8175d6b7eb53",
+  "sim_time": 0.5000000000000003,
+  "renderer": "cgl",
+  "versions": {
+    "torch": "2.6.0",
+    "mujoco": "3.2.3",
+    "robosuite": "1.4.0",
+    "numpy": "1.24.4"
+  },
+  "pretrained_policy_executed": false
+}

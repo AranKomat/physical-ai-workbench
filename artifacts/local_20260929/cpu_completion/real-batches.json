@@ -1,0 +1,505 @@
+{
+  "batches": [
+    {
+      "path": "batch-000.pt",
+      "sha256": "6106067b8ab94b7ca3772dde8547798bb41ff0780aa006279db42493044ec7cd",
+      "windows": 4
+    },
+    {
+      "path": "batch-001.pt",
+      "sha256": "0ae312abd7c859df6b54b09a4cab848add669cd6588ee3b00c508d2a6f73288c",
+      "windows": 4
+    },
+    {
+      "path": "batch-002.pt",
+      "sha256": "ad15cc9bb8235b783ecffe72a87212f2624568ce6c11fbec25f46ffdc325ce77",
+      "windows": 4
+    },
+    {
+      "path": "batch-003.pt",
+      "sha256": "e9c17914e6c178486c532c651a1d7a3251b25ff1923ad77bd2242d5b516e798a",
+      "windows": 4
+    },
+    {
+      "path": "batch-004.pt",
+      "sha256": "3e683eaa1cdd5870b833d707fdfac72ac40234d521f74123116ae691f3609f06",
+      "windows": 4
+    },
+    {
+      "path": "batch-005.pt",
+      "sha256": "3db44b03a653c03f73a401e292cff7c3dd379f6a61d323944fcb7404ee0a9fc6",
+      "windows": 4
+    },
+    {
+      "path": "batch-006.pt",
+      "sha256": "d057e8a134917df444aca5c5aa059b25b27bfc1a9c2bcc83de1c4391333d7f26",
+      "windows": 4
+    },
+    {
+      "path": "batch-007.pt",
+      "sha256": "f00d852e4d1232046a212b637675ab6ef541be2dccab30523e0251f44b98c493",
+      "windows": 4
+    },
+    {
+      "path": "batch-008.pt",
+      "sha256": "ea6fca01cc524a94141d2fd8537675f5468d4507984de965419134849bc987a7",
+      "windows": 4
+    },
+    {
+      "path": "batch-009.pt",
+      "sha256": "29d244241f5707aac8426ac6424222f36a890d183c07ef6d49d9e7a10c7d2fc8",
+      "windows": 4
+    },
+    {
+      "path": "batch-010.pt",
+      "sha256": "6a74a7d4f4ad30095028a736069e03ed54137a4811182099ae21d101d0af7da2",
+      "windows": 4
+    },
+    {
+      "path": "batch-011.pt",
+      "sha256": "85b410bca2bfe8cc99fc310512b63036c5ddc5413d6433b645efb4f07800047b",
+      "windows": 4
+    },
+    {
+      "path": "batch-012.pt",
+      "sha256": "d60c9170f6c53948bda2fb9821d121091913c694fab2d03f4d441dea90a12b7e",
+      "windows": 2
+    }
+  ],
+  "camera_timestamp_semantics": "native LeRobot requested timestamps; decoding uses its tolerance checks",
+  "episodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "native_training_augmentation": true,
+  "normalization_sha256": "5ee161d34b95613605c466751b9c79e2fdddaea2d0d93c9f93b03c78a10bb416",
+  "pretrained_model_executed": false,
+  "purpose": "integration subset, not a held-out benchmark or production training dataset",
+  "records": [
+    {
+      "active_rmse": 0.005176972582314966,
+      "episode": 0,
+      "filtered_index": 0,
+      "frame": 0,
+      "max_error": 0.007624804964142751,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.014275277182184087,
+      "episode": 0,
+      "filtered_index": 90,
+      "frame": 90,
+      "max_error": 0.04983480767992676,
+      "tokens": 45
+    },
+    {
+      "active_rmse": 0.017277208428377037,
+      "episode": 1,
+      "filtered_index": 211,
+      "frame": 37,
+      "max_error": 0.06159422648669366,
+      "tokens": 62
+    },
+    {
+      "active_rmse": 0.011243824471042654,
+      "episode": 1,
+      "filtered_index": 289,
+      "frame": 115,
+      "max_error": 0.05584019738518431,
+      "tokens": 38
+    },
+    {
+      "active_rmse": 0.018331900228276642,
+      "episode": 2,
+      "filtered_index": 398,
+      "frame": 34,
+      "max_error": 0.07046819805143867,
+      "tokens": 62
+    },
+    {
+      "active_rmse": 0.012216844313070347,
+      "episode": 2,
+      "filtered_index": 465,
+      "frame": 101,
+      "max_error": 0.053221124603945166,
+      "tokens": 40
+    },
+    {
+      "active_rmse": 0.015838488477874293,
+      "episode": 3,
+      "filtered_index": 562,
+      "frame": 0,
+      "max_error": 0.0747679738030024,
+      "tokens": 53
+    },
+    {
+      "active_rmse": 0.01241987690731371,
+      "episode": 3,
+      "filtered_index": 652,
+      "frame": 90,
+      "max_error": 0.06647303330015125,
+      "tokens": 44
+    },
+    {
+      "active_rmse": 0.016506834737517077,
+      "episode": 4,
+      "filtered_index": 773,
+      "frame": 35,
+      "max_error": 0.05438416227073525,
+      "tokens": 58
+    },
+    {
+      "active_rmse": 0.011620104509695911,
+      "episode": 4,
+      "filtered_index": 864,
+      "frame": 126,
+      "max_error": 0.05394454392319162,
+      "tokens": 41
+    },
+    {
+      "active_rmse": 0.02077243227094295,
+      "episode": 5,
+      "filtered_index": 986,
+      "frame": 57,
+      "max_error": 0.07560492376741368,
+      "tokens": 73
+    },
+    {
+      "active_rmse": 0.01205510229073449,
+      "episode": 5,
+      "filtered_index": 1075,
+      "frame": 146,
+      "max_error": 0.06134770654479743,
+      "tokens": 45
+    },
+    {
+      "active_rmse": 0.012569887853284214,
+      "episode": 6,
+      "filtered_index": 1194,
+      "frame": 100,
+      "max_error": 0.05641717295537263,
+      "tokens": 41
+    },
+    {
+      "active_rmse": 0.011757762131738434,
+      "episode": 6,
+      "filtered_index": 1243,
+      "frame": 149,
+      "max_error": 0.05539590717994092,
+      "tokens": 44
+    },
+    {
+      "active_rmse": 0.006640920185264492,
+      "episode": 7,
+      "filtered_index": 1323,
+      "frame": 0,
+      "max_error": 0.04473731845731621,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.0188289419346683,
+      "episode": 7,
+      "filtered_index": 1417,
+      "frame": 94,
+      "max_error": 0.08615707795908173,
+      "tokens": 65
+    },
+    {
+      "active_rmse": 0.00637422019168496,
+      "episode": 8,
+      "filtered_index": 1542,
+      "frame": 0,
+      "max_error": 0.024908343256663135,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.012996549672987653,
+      "episode": 8,
+      "filtered_index": 1636,
+      "frame": 94,
+      "max_error": 0.07090753809634986,
+      "tokens": 46
+    },
+    {
+      "active_rmse": 0.006189516452405856,
+      "episode": 9,
+      "filtered_index": 1761,
+      "frame": 0,
+      "max_error": 0.032044390143107226,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.010817895158136706,
+      "episode": 9,
+      "filtered_index": 1881,
+      "frame": 120,
+      "max_error": 0.04481383427093455,
+      "tokens": 39
+    },
+    {
+      "active_rmse": 0.01874082321330895,
+      "episode": 10,
+      "filtered_index": 2032,
+      "frame": 38,
+      "max_error": 0.07964599893636204,
+      "tokens": 67
+    },
+    {
+      "active_rmse": 0.012005997039876506,
+      "episode": 10,
+      "filtered_index": 2154,
+      "frame": 160,
+      "max_error": 0.04327852108569272,
+      "tokens": 44
+    },
+    {
+      "active_rmse": 0.005206587252293605,
+      "episode": 11,
+      "filtered_index": 2307,
+      "frame": 0,
+      "max_error": 0.007520019998627614,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.01213855271444392,
+      "episode": 11,
+      "filtered_index": 2453,
+      "frame": 146,
+      "max_error": 0.06407901579631711,
+      "tokens": 43
+    },
+    {
+      "active_rmse": 0.014370501101655133,
+      "episode": 12,
+      "filtered_index": 2629,
+      "frame": 28,
+      "max_error": 0.05599848286313097,
+      "tokens": 52
+    },
+    {
+      "active_rmse": 0.010883055027967364,
+      "episode": 12,
+      "filtered_index": 2758,
+      "frame": 157,
+      "max_error": 0.04043377638587836,
+      "tokens": 42
+    },
+    {
+      "active_rmse": 0.009395844243234199,
+      "episode": 13,
+      "filtered_index": 2917,
+      "frame": 0,
+      "max_error": 0.050191523717865616,
+      "tokens": 22
+    },
+    {
+      "active_rmse": 0.011961826555945496,
+      "episode": 13,
+      "filtered_index": 3062,
+      "frame": 145,
+      "max_error": 0.05398009358524902,
+      "tokens": 44
+    },
+    {
+      "active_rmse": 0.014960975213640183,
+      "episode": 14,
+      "filtered_index": 3238,
+      "frame": 33,
+      "max_error": 0.05490337327686423,
+      "tokens": 53
+    },
+    {
+      "active_rmse": 0.010921611083823824,
+      "episode": 14,
+      "filtered_index": 3364,
+      "frame": 159,
+      "max_error": 0.05005745832658953,
+      "tokens": 39
+    },
+    {
+      "active_rmse": 0.013774601285547399,
+      "episode": 15,
+      "filtered_index": 3521,
+      "frame": 34,
+      "max_error": 0.04906167470772757,
+      "tokens": 53
+    },
+    {
+      "active_rmse": 0.009822040940152417,
+      "episode": 15,
+      "filtered_index": 3639,
+      "frame": 152,
+      "max_error": 0.04062063211184852,
+      "tokens": 35
+    },
+    {
+      "active_rmse": 0.01467490687995636,
+      "episode": 16,
+      "filtered_index": 3787,
+      "frame": 33,
+      "max_error": 0.051692632580503495,
+      "tokens": 50
+    },
+    {
+      "active_rmse": 0.011826122660205893,
+      "episode": 16,
+      "filtered_index": 3935,
+      "frame": 181,
+      "max_error": 0.06624803042206903,
+      "tokens": 38
+    },
+    {
+      "active_rmse": 0.012677410884424901,
+      "episode": 17,
+      "filtered_index": 4113,
+      "frame": 88,
+      "max_error": 0.05629423901004449,
+      "tokens": 41
+    },
+    {
+      "active_rmse": 0.010604253714636367,
+      "episode": 17,
+      "filtered_index": 4164,
+      "frame": 139,
+      "max_error": 0.042742935747441535,
+      "tokens": 38
+    },
+    {
+      "active_rmse": 0.014045502768560788,
+      "episode": 18,
+      "filtered_index": 4246,
+      "frame": 80,
+      "max_error": 0.05203291882091235,
+      "tokens": 46
+    },
+    {
+      "active_rmse": 0.011699426324729886,
+      "episode": 18,
+      "filtered_index": 4300,
+      "frame": 134,
+      "max_error": 0.04222090249923949,
+      "tokens": 38
+    },
+    {
+      "active_rmse": 0.012239946227594351,
+      "episode": 19,
+      "filtered_index": 4385,
+      "frame": 84,
+      "max_error": 0.05863137714301486,
+      "tokens": 38
+    },
+    {
+      "active_rmse": 0.011675106843022124,
+      "episode": 19,
+      "filtered_index": 4443,
+      "frame": 142,
+      "max_error": 0.049574814766512654,
+      "tokens": 45
+    },
+    {
+      "active_rmse": 0.010544592645174867,
+      "episode": 20,
+      "filtered_index": 4531,
+      "frame": 81,
+      "max_error": 0.04849045983196165,
+      "tokens": 40
+    },
+    {
+      "active_rmse": 0.01124141511138239,
+      "episode": 20,
+      "filtered_index": 4589,
+      "frame": 139,
+      "max_error": 0.05479260325065832,
+      "tokens": 40
+    },
+    {
+      "active_rmse": 0.005225087993852244,
+      "episode": 21,
+      "filtered_index": 4678,
+      "frame": 0,
+      "max_error": 0.011270860136698535,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.012511666866112318,
+      "episode": 21,
+      "filtered_index": 4775,
+      "frame": 97,
+      "max_error": 0.08073588365630918,
+      "tokens": 40
+    },
+    {
+      "active_rmse": 0.008310961190556587,
+      "episode": 22,
+      "filtered_index": 4903,
+      "frame": 0,
+      "max_error": 0.05721455811508269,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.012713107827399822,
+      "episode": 22,
+      "filtered_index": 4995,
+      "frame": 92,
+      "max_error": 0.048451853044051946,
+      "tokens": 42
+    },
+    {
+      "active_rmse": 0.011194019675052364,
+      "episode": 23,
+      "filtered_index": 5118,
+      "frame": 94,
+      "max_error": 0.048246623169716285,
+      "tokens": 37
+    },
+    {
+      "active_rmse": 0.010765676513490604,
+      "episode": 23,
+      "filtered_index": 5170,
+      "frame": 146,
+      "max_error": 0.04923329580449076,
+      "tokens": 40
+    },
+    {
+      "active_rmse": 0.005206708449272282,
+      "episode": 24,
+      "filtered_index": 5252,
+      "frame": 0,
+      "max_error": 0.007520019998627614,
+      "tokens": 19
+    },
+    {
+      "active_rmse": 0.013419156398982501,
+      "episode": 24,
+      "filtered_index": 5353,
+      "frame": 101,
+      "max_error": 0.052521524326803626,
+      "tokens": 43
+    }
+  ],
+  "seed": 7,
+  "windows": 50
+}

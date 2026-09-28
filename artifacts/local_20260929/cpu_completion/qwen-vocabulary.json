@@ -1,0 +1,30 @@
+{
+  "cases": [
+    {
+      "added": 3,
+      "embedding_rows": 11,
+      "initialization": "mean of preexisting tokenizer rows",
+      "optimizer_reloaded": true,
+      "resume_exact": true,
+      "tied": true,
+      "token_ids": [
+        8,
+        10
+      ]
+    },
+    {
+      "added": 3,
+      "embedding_rows": 11,
+      "initialization": "mean of preexisting tokenizer rows",
+      "optimizer_reloaded": true,
+      "resume_exact": true,
+      "tied": false,
+      "token_ids": [
+        8,
+        10
+      ]
+    }
+  ],
+  "model": "tiny random native Qwen3_5ForConditionalGeneration",
+  "pretrained_weights": false
+}

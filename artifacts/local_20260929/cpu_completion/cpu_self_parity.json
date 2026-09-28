@@ -1,0 +1,1982 @@
+{
+  "atol": 0.0,
+  "cuda_rocm_pair": false,
+  "native_vla_qualified": false,
+  "note": "Tolerance is an explicit diagnostic setting, not a universal success criterion. Native-module and closed-loop checks still required.",
+  "numeric_pass": true,
+  "results": {
+    "brain.first": {
+      "cosine": 1.0,
+      "count": 5632,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "brain.last": {
+      "cosine": 0.9999999999999998,
+      "count": 5632,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "forward.velocity": {
+      "cosine": 1.0000000000000002,
+      "count": 1280,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.linear1.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 64,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.linear1.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.linear2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.linear2.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.multihead_attn.in_proj_bias": {
+      "cosine": 1.0,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.multihead_attn.in_proj_weight": {
+      "cosine": 1.0000000000000002,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.multihead_attn.out_proj.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.multihead_attn.out_proj.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.norm1.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.norm1.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.norm2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.norm2.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.norm3.bias": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.norm3.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.self_attn.in_proj_bias": {
+      "cosine": 1.0,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.self_attn.in_proj_weight": {
+      "cosine": 1.0000000000000002,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.self_attn.out_proj.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.decoder.self_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.embed.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 640,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.head.bias": {
+      "cosine": 1.0,
+      "count": 20,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.head.weight": {
+      "cosine": 1.0,
+      "count": 640,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.aux.position.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 10272,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.linear1.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 64,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.linear1.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.linear2.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.linear2.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.norm1.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.norm1.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.norm2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.norm2.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.self_attn.in_proj_bias": {
+      "cosine": 1.0,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.self_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.self_attn.out_proj.bias": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.0.self_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.linear1.bias": {
+      "cosine": 1.0,
+      "count": 64,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.linear1.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.linear2.bias": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.linear2.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.norm1.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.norm1.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.norm2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.norm2.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.self_attn.in_proj_bias": {
+      "cosine": 1.0000000000000002,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.self_attn.in_proj_weight": {
+      "cosine": 0.9999999999999999,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.self_attn.out_proj.bias": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.blocks.1.self_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.position.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.role.weight": {
+      "cosine": 1.0,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.text.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 8320,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.vision.0.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.brain.vision.0.weight": {
+      "cosine": 1.0,
+      "count": 864,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.mixer.logits": {
+      "cosine": 0.9999999999999999,
+      "count": 2,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.mixer.norm.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.mixer.norm.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.action_in.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.action_in.weight": {
+      "cosine": 1.0,
+      "count": 2560,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.cross_attn.in_proj_bias": {
+      "cosine": 0.9999999999999999,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.cross_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.cross_attn.out_proj.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.cross_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.mlp.0.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.mlp.0.weight": {
+      "cosine": 1.0,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.mlp.2.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.mlp.2.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.norm1.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.norm1.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.norm2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.norm2.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.norm3.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.norm3.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.self_attn.in_proj_bias": {
+      "cosine": 0.9999999999999999,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.self_attn.in_proj_weight": {
+      "cosine": 0.9999999999999999,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.self_attn.out_proj.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.0.self_attn.out_proj.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.cross_attn.in_proj_bias": {
+      "cosine": 0.9999999999999999,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.cross_attn.in_proj_weight": {
+      "cosine": 0.9999999999999998,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.cross_attn.out_proj.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.cross_attn.out_proj.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.mlp.0.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.mlp.0.weight": {
+      "cosine": 1.0,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.mlp.2.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.mlp.2.weight": {
+      "cosine": 1.0,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.norm1.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.norm1.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.norm2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.norm2.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.norm3.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.norm3.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.self_attn.in_proj_bias": {
+      "cosine": 1.0000000000000002,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.self_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.self_attn.out_proj.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.blocks.1.self_attn.out_proj.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.context_in.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.context_in.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.mask_in.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.mask_in.weight": {
+      "cosine": 1.0,
+      "count": 2560,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.output.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 80,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.output.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2560,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.position": {
+      "cosine": 0.9999999999999998,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.state_in.bias": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.state_in.weight": {
+      "cosine": 1.0,
+      "count": 5120,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.time_in.0.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.time_in.0.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.time_in.2.bias": {
+      "cosine": 0.9999999999999999,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "gradient.motor.time_in.2.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "learning.loss": {
+      "cosine": 0.9999999999999999,
+      "count": 6,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "loss.aux_ce": {
+      "cosine": 1.0,
+      "count": 1,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "loss.flow": {
+      "cosine": 1.0,
+      "count": 1,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "loss.total": {
+      "cosine": 1.0,
+      "count": 1,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "sample.actions": {
+      "cosine": 1.0,
+      "count": 1280,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "sample.trace": {
+      "cosine": 0.9999999999999998,
+      "count": 6400,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.linear1.bias": {
+      "cosine": 1.0,
+      "count": 64,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.linear1.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.linear2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.linear2.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.multihead_attn.in_proj_bias": {
+      "cosine": 1.0,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.multihead_attn.in_proj_weight": {
+      "cosine": 0.9999999999999999,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.multihead_attn.out_proj.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.multihead_attn.out_proj.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.norm1.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.norm1.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.norm2.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.norm2.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.norm3.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.norm3.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.self_attn.in_proj_bias": {
+      "cosine": 1.0,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.self_attn.in_proj_weight": {
+      "cosine": 1.0000000000000002,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.self_attn.out_proj.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.decoder.self_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.embed.weight": {
+      "cosine": 1.0,
+      "count": 640,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.head.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 20,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.head.weight": {
+      "cosine": 1.0,
+      "count": 640,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.aux.position.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 10272,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.linear1.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 64,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.linear1.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.linear2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.linear2.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.norm1.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.norm1.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.norm2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.norm2.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.self_attn.in_proj_bias": {
+      "cosine": 1.0000000000000002,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.self_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.self_attn.out_proj.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.0.self_attn.out_proj.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.linear1.bias": {
+      "cosine": 1.0,
+      "count": 64,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.linear1.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.linear2.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.linear2.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.norm1.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.norm1.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.norm2.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.norm2.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.self_attn.in_proj_bias": {
+      "cosine": 1.0,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.self_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.self_attn.out_proj.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.blocks.1.self_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.position.weight": {
+      "cosine": 1.0,
+      "count": 2048,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.role.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.text.weight": {
+      "cosine": 1.0,
+      "count": 8320,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.vision.0.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.brain.vision.0.weight": {
+      "cosine": 0.9999999999999999,
+      "count": 864,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.mixer.logits": {
+      "cosine": 0.9999999999999998,
+      "count": 2,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.mixer.norm.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.mixer.norm.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.action_in.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.action_in.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2560,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.cross_attn.in_proj_bias": {
+      "cosine": 0.9999999999999998,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.cross_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.cross_attn.out_proj.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.cross_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.mlp.0.bias": {
+      "cosine": 1.0,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.mlp.0.weight": {
+      "cosine": 1.0,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.mlp.2.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.mlp.2.weight": {
+      "cosine": 1.0,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.norm1.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.norm1.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.norm2.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.norm2.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.norm3.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.norm3.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.self_attn.in_proj_bias": {
+      "cosine": 1.0,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.self_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.self_attn.out_proj.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.0.self_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.cross_attn.in_proj_bias": {
+      "cosine": 1.0000000000000002,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.cross_attn.in_proj_weight": {
+      "cosine": 1.0,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.cross_attn.out_proj.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.cross_attn.out_proj.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.mlp.0.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.mlp.0.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.mlp.2.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.mlp.2.weight": {
+      "cosine": 1.0,
+      "count": 4096,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.norm1.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.norm1.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.norm2.bias": {
+      "cosine": 1.0000000000000002,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.norm2.weight": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.norm3.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.norm3.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.self_attn.in_proj_bias": {
+      "cosine": 0.9999999999999998,
+      "count": 96,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.self_attn.in_proj_weight": {
+      "cosine": 0.9999999999999999,
+      "count": 3072,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.self_attn.out_proj.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.blocks.1.self_attn.out_proj.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.context_in.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.context_in.weight": {
+      "cosine": 0.9999999999999998,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.mask_in.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.mask_in.weight": {
+      "cosine": 1.0000000000000002,
+      "count": 2560,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.output.bias": {
+      "cosine": 1.0,
+      "count": 80,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.output.weight": {
+      "cosine": 1.0,
+      "count": 2560,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.position": {
+      "cosine": 1.0,
+      "count": 128,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.state_in.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.state_in.weight": {
+      "cosine": 1.0,
+      "count": 5120,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.time_in.0.bias": {
+      "cosine": 1.0,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.time_in.0.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.time_in.2.bias": {
+      "cosine": 0.9999999999999998,
+      "count": 32,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    },
+    "update.motor.time_in.2.weight": {
+      "cosine": 1.0,
+      "count": 1024,
+      "failing_fraction": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0,
+      "passed": true,
+      "relative_l2": 0.0
+    }
+  },
+  "rtol": 0.0,
+  "scope": "reference_model_only"
+}

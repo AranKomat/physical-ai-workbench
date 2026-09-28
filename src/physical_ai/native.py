@@ -60,13 +60,15 @@ class W0MotorAdapter(nn.Module):
 def load_w0_motor(*, checkpoint: str, constructor_config: dict, state_dict_key: str,
                   source_prefix: str, context_dim: int, convention: NativeFlowConvention,
                   device: str, dtype: torch.dtype, reset_action_io: bool,
-                  checkpoint_sha256: str, qualification_mode: bool = False) -> tuple[W0MotorAdapter, dict]:
+                  checkpoint_sha256: str, qualification_mode: bool = False,
+                  source_context_dim: int | None = None) -> tuple[W0MotorAdapter, dict]:
     """Requires the ACTUAL full Base action-state keys, not a Wan-only init payload.
 
     The caller inspects keys and sets state_dict_key/source_prefix explicitly.
-    No interpolation or layer replication. Full source keys load before Qwen
-    reconditioning; resets are recorded. Unverified convention only allowed for
-    qualification work, not training.
+    No interpolation or layer replication. Preconditioned checkpoints require
+    source_context_dim so their architecture is rebuilt before strict loading,
+    preserving trained K/V. Other sources load before new conditioning; resets
+    are recorded. Unverified conventions are for qualification, not training.
     """
     if not Path(checkpoint).is_file() or not checkpoint_sha256:
         raise ValueError("local checkpoint and recorded SHA-256 required")
@@ -82,10 +84,17 @@ def load_w0_motor(*, checkpoint: str, constructor_config: dict, state_dict_key: 
     action = ActionDiT(**constructor_config)
     state = select_prefix(read_tensor_state(checkpoint, state_dict_key), source_prefix)
     resets = ("action_encoder.*", "head.*") if reset_action_io else ()
+    if source_context_dim is not None:
+        if source_context_dim != context_dim:
+            raise ValueError("preconditioned W0 transfer to a different context width needs an explicit new projection recipe")
+        # Base checkpoints already contain trained raw-VLM K/V. Reconstruct
+        # their architecture BEFORE loading, then retain all pretrained values.
+        action.configure_vlm_conditioning(source_context_dim)
     report = audited_load(action, state, reset_patterns=resets)
     replaced = action.configure_vlm_conditioning(context_dim)
     report.update(checkpoint_sha256=actual_hash, source_prefix=source_prefix, state_dict_key=state_dict_key,
                   new_cross_attention_blocks=replaced, action_semantics_reset=reset_action_io,
+                  source_context_dim=source_context_dim,
                   warning="Extracted standalone expert is not the intact W0 MoT policy. Validate transfer.")
     adapter = W0MotorAdapter(action, context_dim, constructor_config["action_dim"], convention)
     return adapter.to(device=device, dtype=dtype), report

@@ -1,0 +1,24 @@
+{
+  "source_revision": "90801baa3bdc7829c1e4989edfe3d0fb2410ea6a",
+  "checkpoint_revision": "ca534d4f3c9c7131205b4ee37e965b3ef21ffb5f",
+  "checkpoint_sha256": "a6bcf7a1eb2cf3d303e02faca05579cf77f4ac90863a15ff896b7e85ef884a08",
+  "state_dict_key": "mot",
+  "source_prefix": "mixtures.action.",
+  "source_context_dim": 2048,
+  "context_dim": 2048,
+  "constructor": {
+    "hidden_dim": 1024,
+    "action_dim": 80,
+    "ffn_dim": 4096,
+    "text_dim": 4096,
+    "freq_dim": 256,
+    "eps": 1e-6,
+    "num_heads": 24,
+    "attn_head_dim": 128,
+    "num_layers": 30,
+    "use_gradient_checkpointing": false,
+    "training_time_rtc": {"enabled": false, "max_delay_steps": 16}
+  },
+  "native_training_qualified": false,
+  "note": "Actual Base has trained 2048-wide raw-VLM K/V. Configure before load; preserve those weights. Equal 80D width is not proof of research action semantics."
+}

@@ -5,6 +5,14 @@
   "network_observation": "Direct git ls-remote failed: Could not resolve host github.com",
   "repositories": [
     {
+      "name": "libero",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO.git",
+      "repository": "Lifelong-Robot-Learning/LIBERO",
+      "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+      "core": false,
+      "role": "native Tau simulator fixture and evaluation substrate"
+    },
+    {
       "name": "primus",
       "url": "https://github.com/AMD-AGI/Primus.git",
       "repository": "AMD-AGI/Primus",

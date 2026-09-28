@@ -1,0 +1,41 @@
+{
+  "all_nonblank": true,
+  "images": [
+    {
+      "maximum": 238,
+      "minimum": 6,
+      "path": "runs/libero-captures-v4/task-0/image.png",
+      "std": 50.211232023582596
+    },
+    {
+      "maximum": 234,
+      "minimum": 2,
+      "path": "runs/libero-captures-v4/task-0/wrist_image.png",
+      "std": 63.50222700962446
+    },
+    {
+      "maximum": 238,
+      "minimum": 6,
+      "path": "runs/libero-captures-v4/task-1/image.png",
+      "std": 49.98682389883465
+    },
+    {
+      "maximum": 237,
+      "minimum": 3,
+      "path": "runs/libero-captures-v4/task-1/wrist_image.png",
+      "std": 62.780677513492755
+    },
+    {
+      "maximum": 238,
+      "minimum": 6,
+      "path": "runs/libero-captures-v4/task-2/image.png",
+      "std": 50.07314609039331
+    },
+    {
+      "maximum": 233,
+      "minimum": 4,
+      "path": "runs/libero-captures-v4/task-2/wrist_image.png",
+      "std": 63.207367832694295
+    }
+  ]
+}
