@@ -2,6 +2,10 @@
 
 This file is the boundary between executable work and planned integration. A CPU pass is not a pretrained-policy result.
 
+Continuation on 2026-09-29: four core pinned sources cloned, 98 local tests pass,
+and the real Qwen3.5-2B processor passes multimodal prefix/CE separation checks.
+See `2026-09-29-integration.md` for evidence and the first native reproduction plan.
+
 | Area | Implemented | Executed here | Remaining |
 |---|---|---|---|
 | Physical action contract | Versioned 80D research schema, masks, explicit native channel mapping | CPU tests | Audit each donor/source's actual slot semantics |
@@ -14,6 +18,7 @@ This file is the boundary between executable work and planned integration. A CPU
 | Layer routing | Learned scalar layer mixer | CPU tests | No LayerRoute reproduction or claimed gains |
 | Native W0 | Signature-matched wrapper; strict extraction/loading; explicit time/sign conversion | Fake-native contract tests only | Download actual Base weights, inspect keys and normalize; import and qualify native source |
 | Native Qwen | Lazy HF wrapper, prefix/CE separation, composition with motor | Fake-HF interface tests only | Install HF, load actual weights, validate multimodal processor and memory |
+| Native multimodal collation | Observation image processing, assistant-only CE masks, independent prefix/auxiliary forwards | Actual pinned Qwen3.5-2B processor on synthetic one/two-camera examples; target independence verified | Real action-codec labels, dataset windows/state/geometry integration, pretrained forward/backward |
 | A1.5 | Pin and integration plan | No native inference | Native policy/expert adapter and checkpoint transfer |
 | Tau0 | Pin, proposal HTTP payload/client, world CLI command builder | Payload/command tests only | Start native services; preserve native low-level contract |
 | Visual goals | Future-pair export, goal provenance guard, cache, generator jobs | Synthetic-image tests/exports | Actual generated images and downstream success study |

@@ -4,6 +4,10 @@ A CPU-tested implementation workbench for the Qwen + pretrained flow-motor resea
 
 **Start here:** [v5 research handoff](docs/HANDOFF_V5.md) · [implementation status](docs/IMPLEMENTATION_STATUS.md) · [next-agent instructions](docs/NEXT_AGENT.md)
 
+**Continuation:** [2026-09-29 integration progress](docs/2026-09-29-integration.md).
+The four core upstream revisions have now been cloned locally. The native
+Qwen3.5-2B processor has been exercised; pretrained policy execution is next.
+
 ## What this is—and is not
 
 The local code implements auditable data/action contracts, flow matching, a small reference VLA, a knowledge-insulation gradient boundary with an auxiliary autoregressive objective, staged motor adaptation, optional visual-goal handling, native-adapter scaffolding and numerical qualification tools.
@@ -20,6 +24,9 @@ In an environment with PyTorch, NumPy, Pillow, PyYAML, safetensors and pytest:
 python -m pip install -e . --no-deps
 bash scripts/validate_cpu.sh
 ```
+
+Pass an output directory (for example `bash scripts/validate_cpu.sh runs/local`)
+to preserve the original bundle's reports while recording a fresh validation.
 
 Or create a CPU environment and install dependencies:
 
@@ -82,6 +89,19 @@ python scripts/resolve_hf.py Qwen/Qwen3.5-2B --output weights/qwen2b
 ```
 
 Add `--download-weights` only when the host has the intended storage/access. Requested newer model identities must be verified on that host; a candidate in `configs/models.yaml` is not a promise that it has been loaded here.
+
+Validate multimodal batches using the actual Qwen processor, without downloading
+model weights (requires the `hf` extra):
+
+```bash
+python scripts/qualify_qwen_processor.py --output runs/qwen_processor.json
+```
+
+`QwenObservationCollator` builds separate observation-only motor inputs and
+assistant-supervised auxiliary inputs. It verifies token-prefix agreement after
+image expansion and preserves observation tensors across both forwards. Supply
+real, versioned action-codec labels upstream; the qualification command uses
+synthetic text labels solely to test preprocessing.
 
 ## Numerical qualification
 
